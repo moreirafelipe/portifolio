@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import '../Variables/Variables.scss';
+
+.navbar {
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+
+  .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-left: 10px;
+    color: aqua;
+    font-weight: bolder;
+    text-shadow: $textShadow;
+  }
+
+  .navbar-brand span {
+    color: rgb(204, 204, 204);
+  }
+}

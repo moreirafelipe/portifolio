@@ -1,0 +1,24 @@
+@import '../Variables/Variables.scss';
+
+//Estilos gerais
+.description {
+  display: block;
+}
+
+.card {
+  width: 270px;
+  height: 360px;
+  margin: 0 25px;
+  transform: scale(.9);
+  transition: all .2s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+@media (min-width: 468) {
+  .card-desktop {
+    width: 350px;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../Variables/Variables.scss';
+
+#projetos {
+  //Estilos flex
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+
+  //Estilos gerais do elemento
+  @include carouselStyles(95vw, auto, none, $textShadow);
+
+  div {
+    margin: auto auto;
+  }
+}
+
+/* .carousel-desktop,
+.carousel-desktop div,
+.card-desktop {
+  opacity: 1;
+} */
+
+/* @media (min-width: 468px) {
+
+  .carousel-desktop,
+  .carousel-desktop div,
+  .card-desktop {
+    opacity: 1;
+  }
+
+  .carousel-desktop {
+    padding: 5px;
+
+    div {
+      padding: 5px;
+    }
+  }
+
+  .card-desktop {
+    width: 350px;
+  }
+} */

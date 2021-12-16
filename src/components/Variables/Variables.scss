@@ -1,0 +1,47 @@
+//CORES 
+$shadowColor: rgba(0, 0, 0, 0.84);
+$bgColor: #000;
+
+//FONTES
+$lightColor: #ccc;
+$bodyFontFamily: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+'Roboto',
+'Oxygen',
+'Ubuntu',
+'Cantarell',
+'Fira Sans',
+'Droid Sans',
+'Helvetica Neue',
+sans-serif;
+
+$codeFontFamily: source-code-pro,
+Menlo,
+Monaco,
+Consolas,
+'Courier New',
+monospace;
+
+$textShadow: 2px 2px 2px $shadowColor;
+$boxShadow: 6px 6px 16px -3px $shadowColor;
+
+//IMAGENS
+$memoryFighter: '../../assets/img/memoryfighter.PNG';
+$travelsBook: '../../assets/img/travelsbook.PNG';
+$myFlix: '../../assets/img/myflix.PNG';
+
+//FUNÇÃO
+@mixin carouselImgStyle($width, $height, $outBgColor, $opacity) {
+  width: $width;
+  height: $width;
+  background-color: $outBgColor;
+  filter: opacity($opacity);
+}
+
+@mixin carouselStyles($width, $hight, $text-shadow, $bgColor) {
+  width: $width;
+  height: $hight;
+  text-shadow: $text-shadow;
+  background-color: $bgColor;
+}
