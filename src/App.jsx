@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import GridCarousel from './components/Carousel';
 import useWindowWidth from './hooks';
+import Habilities from './components/Habilities';
+import Footer from './components/Footer';
 
 //Array com dados dos projetos
 const arrayData = [
@@ -43,17 +45,18 @@ export default function App() {
   const windowWidth = useWindowWidth();
 
   return (
-    <div className="App">
-      <Header />
-      <main>
+    <div id="App">
+      <Header id="header" />
+      <main id="start">
         <Banner />
       </main>
-      <section>
+      <section id="projects">
         {windowWidth > 700 ? (<GridCarousel projects={arrayData} show={3.5} />) : (<GridCarousel id="carousel" projects={arrayData} show={1} />)}
       </section>
-      <footer>
-
-      </footer>
+      <section id="habilities">
+        <Habilities />
+      </section>
+      <Footer id="about" />
     </div>
   );
 }

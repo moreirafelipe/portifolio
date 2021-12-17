@@ -2,7 +2,8 @@
 @import '../Variables/Variables.scss';
 
 .navbar {
-  width: 100vw;
+  width: 100%;
+  height: auto;
   position: fixed;
   z-index: 3;
   top: 0;
@@ -19,5 +20,16 @@
 
   .navbar-brand span {
     color: rgb(204, 204, 204);
+  }
+
+  #responsive-navbar-nav {
+    z-index: 3;
+  }
+}
+
+
+@media (min-width: 468px) {
+  .navbar {
+    height: 10vh;
   }
 }

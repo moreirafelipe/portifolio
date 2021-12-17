@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.skillIcon {
+  width: 80px;
+  height: auto;
+  margin: 10px;
+}
+
+@media (min-width: 468px) {
+  .skillIcon {
+    width: 90px;
+    margin: 20px;
+    height: auto;
+  }
+
+  .container {
+    width: 60%;
+    height: 80vh;
+  }
+}
