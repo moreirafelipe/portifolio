@@ -1,16 +1,17 @@
 @import '../components/Variables/Variables.scss';
-
-main {
-  margin-top: 72px;
-}
+/* * {
+  border: red solid thin;
+} */
 
 #app {
   width: 100%;
-  margin: 0;
   height: auto;
+  margin: 0;
 }
 
 #header {
+  width: 100%;
+  height: auto;
   z-index: 3;
 }
 
@@ -43,16 +44,18 @@ footer {
   display: flex;
 }
 
+section,
+footer,
 main {
   z-index: 2;
 }
 
-section,
-footer {
-  z-index: 3;
-}
-
 @media (min-width: 468px) {
+
+  #app {
+    max-width: 1200px;
+  }
+
   footer {
     width: 250px;
     height: auto;

@@ -1,4 +1,4 @@
-.container {
+.container-icons {
   width: 100%;
   height: auto;
 }
@@ -12,11 +12,11 @@
 @media (min-width: 468px) {
   .skillIcon {
     width: 90px;
-    margin: 20px;
+    margin: 30px;
     height: auto;
   }
 
-  .container {
+  .container-icons {
     width: 60%;
     height: 80vh;
   }

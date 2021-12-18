@@ -1,4 +1,4 @@
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+import { Nav, Navbar, Container } from 'react-bootstrap';
 import './styles.scss'
 
 export default function Header() {
@@ -10,9 +10,9 @@ export default function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#start">Home</Nav.Link>
-            <Nav.Link href="#projects">Projetos</Nav.Link>
-            <Nav.Link href="#habilities">Habilidades</Nav.Link>
-            <Nav.Link href="#about">Contato</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#habilities">Habilities</Nav.Link>
+            <Nav.Link href="#about">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
