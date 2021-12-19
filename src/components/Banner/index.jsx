@@ -37,9 +37,6 @@ export default function Banner() {
       // Initialize grid
       const grid = new Grid(document.querySelector('.grid'));
     });
-
-    /*  const cursor = new Cursor(document.querySelector('.cursor')); */
-
   })
 
   return (
@@ -55,15 +52,6 @@ export default function Banner() {
         <div className="grid__item pos-8"><div className="grid__item-img" style={{ backgroundImage: `url(${univesp})` }}></div></div>
         <div className="grid__item pos-9"><div className="grid__item-img" style={{ backgroundImage: `url(${amarBack})` }}></div></div>
         <div className="grid__item pos-10"><div className="grid__item-img" style={{ backgroundImage: `url(${amarFront})` }}></div></div>
-
-        {/*         <h2 class="content__title no-select">
-          <span>Grip</span>
-          <span class="content__title-sub">tapes</span>
-        </h2>
-
-        <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
-          <circle class="cursor__inner" cx="40" cy="40" r="20" />
-        </svg> */}
       </div>
 
       <Row className="d-flex justify-content-around align-items-center mt-5 pt-5 w-100 text-center content__title no-select">
@@ -103,10 +91,6 @@ export default function Banner() {
           />
 
         </Col>
-
-        {/*           <Col className='container-profile mt-5 pt-2' xs={12} md={6}>
-            <img className='animages' src={profile} alt={"profile"} />
-          </Col> */}
       </Row>
     </Container >
   )

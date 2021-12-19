@@ -23,8 +23,8 @@ export default function GridCarousel(props) {
 
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
-    <div id="projetos" className="d-flex flex-column flex-wrap m-auto my-5">
-      <h3>Projetos</h3>
+    <div id="projetos" className="d-flex flex-column flex-wrap m-auto mt-5 pt-5">
+      <h3 className='mt-5'>Projects</h3>
       <div className="d-none d-md-block">
         <Quote />
       </div>
@@ -39,8 +39,8 @@ export default function GridCarousel(props) {
                 <div className="card-body">
                   <h5 className="card-title">{project.name}</h5>
                   <p className="card-text">{project.description}</p>
-                  <a href={project.host} className="btn btn-primary">Acesse</a>
-                  <a href={project.repo} className="btn btn-light mx-2">Repositório</a>
+                  <a href={project.host} className="btn btn-primary">Access</a>
+                  <a href={project.repo} className="btn btn-light mx-2">Repository</a>
                 </div>
               </div>
             </Item>

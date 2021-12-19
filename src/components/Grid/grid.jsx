@@ -60,7 +60,7 @@ export default class Grid {
       .to(this.items, {
         duration: 3,
         ease: 'Power1.easeOut',
-        opacity: 0.65,
+        opacity: 0.8,
         stagger: { amount: 0.6, grid: 'auto', from: 'center' }
       }, 0);
   }

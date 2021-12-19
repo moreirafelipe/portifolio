@@ -1,7 +1,4 @@
 @import '../components/Variables/Variables.scss';
-/* * {
-  border: red solid thin;
-} */
 
 #app {
   width: 100%;
@@ -11,7 +8,7 @@
 
 #header {
   width: 100%;
-  height: auto;
+  height: calc(100vh - 13rem);
   z-index: 3;
 }
 
@@ -28,13 +25,14 @@
 }
 
 #carousel {
-
   //Estilos gerais do elemento
   @include carouselStyles(100%, 90vh, none, auto);
 
   div {
     margin: auto;
   }
+
+  z-index: 2;
 }
 
 footer {
@@ -42,6 +40,10 @@ footer {
   height: 20vh;
   height: auto;
   display: flex;
+}
+
+#start {
+  height: 100vh;
 }
 
 section,
