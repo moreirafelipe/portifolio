@@ -18,7 +18,7 @@ import './styles.scss'
 
 export default function Habilities() {
   return (
-    <div className="d-flex flex-row flex-wrap justify-content-center text-center align-content-center text-light bg-dark mt-5 p-5">
+    <div className="d-flex flex-row flex-wrap justify-content-center text-center align-content-center text-light bg-black mt-5 p-5">
       <h3 className="w-100 text-center mt-5">Habilidades</h3>
       <p>Abaixo, estão algumas das habilidades que estou desenvolvendo em projetos pessoais, acadêmicos e profissionais:</p>
       <div className="container-icons d-flex flex-wrap flex-row justify-content-around py-5">

@@ -8,7 +8,7 @@ import './styles.scss'
 
 export default function Footer() {
   return (
-    <section id="footer" className="bg-dark text-light text-center">
+    <section id="footer" className="bg-black text-light text-center">
       <div className="w-100">
         <p>Fique a vontade para interagir através das minhas redes sociais!</p>
       </div>

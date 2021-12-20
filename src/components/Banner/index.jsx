@@ -1,10 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import TypewriterComponent from 'typewriter-effect';
-import profile from '../../assets/photos/profile.png';
 
-import Cursor from '../Cursor';
 import Grid from '../Grid/grid';
 import { preloadImages } from '../../utils/utils';
 

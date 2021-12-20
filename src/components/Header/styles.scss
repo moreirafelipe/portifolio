@@ -16,6 +16,14 @@
     color: aqua;
     font-weight: bolder;
     text-shadow: $textShadow;
+
+    span:hover {
+      color: rgb(86, 255, 142);
+    }
+  }
+
+  .navbar-brand:hover {
+    color: aquamarine;
   }
 
   .navbar-brand span {
@@ -25,4 +33,8 @@
   #responsive-navbar-nav {
     z-index: 3;
   }
+}
+
+.navbar.colorChange {
+  background-color: #000;
 }
