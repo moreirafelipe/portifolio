@@ -6,14 +6,22 @@
 }
 
 .card {
-  min-width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
   object-fit: contain;
   min-height: 60vh;
   max-height: 60vh;
-  object-fit: cover;
+  object-fit: contain;
   margin: 0 auto;
   transform: scale(.9);
   transition: all .2s ease-out;
+
+  #card-buttons {
+    position: fixed;
+    bottom: 25px;
+  }
 }
 
 .card:hover {

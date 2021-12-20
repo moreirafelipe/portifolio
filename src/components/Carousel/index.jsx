@@ -58,13 +58,15 @@ export default function GridCarousel(props) {
         {props.projects.length > 0 && (props.projects.map((project, index) => {
           return (
             <Item key={index}>
-              <div className="card bg-dark text-light m-4">
+              <div className="card bg-black text-light m-4">
                 <img src={imgName[index]} className="card-img-top" alt="..." />
-                <div className="card-body">
+                <div className="card-body mb-5">
                   <h5 className="card-title">{project.name}</h5>
                   <p className="card-text">{project.description}</p>
-                  <a href={project.host} className="btn btn-primary">Access</a>
-                  <a href={project.repo} className="btn btn-light mx-2">Repository</a>
+                  <div id="card-buttons">
+                    <a href={project.host} className="btn btn-primary">Access</a>
+                    <a href={project.repo} className="btn btn-light mx-2">Repository</a>
+                  </div>
                 </div>
               </div>
             </Item>
