@@ -1,10 +1,7 @@
-import { Carousel } from '@trendyol-js/react-carousel';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { Item } from '../Item';
 import Quote from '../Quote';
-
-//Importing SVGs navigation arrows
-import { ReactComponent as BackSVG } from '../../assets/icons/back.svg';
-import { ReactComponent as ForwardSVG } from '../../assets/icons/forward.svg';
 
 //Importando estilos
 import './styles.scss'
@@ -19,6 +16,24 @@ import felinos from '../../assets/images/projects/felinos.png';
 //Function component que exporta o componentcarousel
 export default function GridCarousel(props) {
 
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
+
   const imgName = [memoryfighter, travelsbook, myFlix, calculadora, felinos];
 
   //Iterando array de dados e retornando componentes que contém os cards como props children
@@ -29,8 +44,17 @@ export default function GridCarousel(props) {
         <Quote />
       </div>
 
-      <Carousel infinite={true} responsive={true} show={props.show} slide={1} swiping={true} useArrowKeys={true} leftArrow={<BackSVG />} rightArrow={<ForwardSVG />} className="d-flex m-auto w-100">
-
+      <Carousel className="carousel d-flex m-auto w-100"
+        showDots={true}
+        responsive={responsive}
+        infinite={true}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+        renderArrowsWhenDisabled={true}
+        autoPlay={true}
+        autoPlaySpeed={10000}
+        arrows={true}
+      >
         {props.projects.length > 0 && (props.projects.map((project, index) => {
           return (
             <Item key={index}>
@@ -47,6 +71,6 @@ export default function GridCarousel(props) {
           )
         }))}
       </Carousel>
-    </div>
+    </div >
   )
 }

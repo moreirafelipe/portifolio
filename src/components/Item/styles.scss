@@ -6,9 +6,12 @@
 }
 
 .card {
-  width: 270px;
-  height: 360px;
-  margin: 0 25px;
+  min-width: 90%;
+  object-fit: contain;
+  min-height: 60vh;
+  max-height: 60vh;
+  object-fit: cover;
+  margin: 0 auto;
   transform: scale(.9);
   transition: all .2s ease-out;
 }
