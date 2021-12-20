@@ -56,39 +56,42 @@ export default function Banner() {
 
       <Row className="d-flex justify-content-around align-items-center mt-5 pt-5 w-100 text-center content__title no-select">
         <Col className='container-text text-center display-6 mt-4 pt-2' xs={12} md={12}>
-          <TypewriterComponent
 
-            onInit={(typewriter) => {
+          <span id="text-writing">
+            <TypewriterComponent
 
-              typewriter
-                .typeString("Welcome!")
-                .pauseFor(1000)
+              onInit={(typewriter) => {
 
-                .typeString("<br>My name is Felipe!")
-                .pauseFor(1000)
+                typewriter
+                  .typeString("Welcome!")
+                  .pauseFor(1000)
 
-                .changeDeleteSpeed(1)
+                  .typeString("<br>My name is Felipe!")
+                  .pauseFor(1000)
 
-                .typeString("<br>I'm ")
-                .typeString(`Full-stack developer <img src=${webSVG} alt="developer">`)
-                .pauseFor(1000)
-                .deleteChars(21)
+                  .changeDeleteSpeed(1)
 
-                .typeString(`Languages student <img src=${languageSVG} alt="languages">`)
-                .pauseFor(1000)
-                .deleteChars(18)
+                  .typeString("<br>I'm ")
+                  .typeString(`Full-stack developer <img src=${webSVG} alt="developer">`)
+                  .pauseFor(1000)
+                  .deleteChars(21)
 
-                .typeString(`Engineering student <img src=${enginnerSVG} alt="engineer">`)
-                .pauseFor(1000)
-                .deleteChars(20)
+                  .typeString(`Languages student <img src=${languageSVG} alt="languages">`)
+                  .pauseFor(1000)
+                  .deleteChars(18)
 
-                .typeString("Software engineer!")
-                .typeString(`<br><img src=${webSVG} alt="developer">`)
-                .typeString(`<img src=${languageSVG} alt="developer">`)
-                .typeString(`<img src=${enginnerSVG} alt="developer">`)
-                .start();
-            }}
-          />
+                  .typeString(`Engineering student <img src=${enginnerSVG} alt="engineer">`)
+                  .pauseFor(1000)
+                  .deleteChars(20)
+
+                  .typeString("Software Engineer!")
+                  .typeString(`<br><img src=${webSVG} alt="developer">`)
+                  .typeString(`<img src=${languageSVG} alt="developer">`)
+                  .typeString(`<img src=${enginnerSVG} alt="developer">`)
+                  .start();
+              }}
+            />
+          </span>
 
         </Col>
       </Row>
