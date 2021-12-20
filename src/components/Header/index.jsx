@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <Navbar className={colorChange ? 'navbar colorChange' : 'navbar'} collapseOnSelect expand="lg" variant={colorChange ? 'dark' : 'light'} >
       <Container>
-        <Navbar.Brand href="#start">F<span>(m)</span></Navbar.Brand>
+        <Navbar.Brand href="#start" className={colorChange ? 'text-info' : null}>F<span className={colorChange ? 'text-white' : null}>(m)</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto fw-bold fs-5">

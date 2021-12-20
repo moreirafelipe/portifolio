@@ -13,21 +13,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     margin-left: 10px;
-    color: aqua;
+    color: #000;
     font-weight: bolder;
-    text-shadow: $textShadow;
-
-    span:hover {
-      color: rgb(86, 255, 142);
-    }
-  }
-
-  .navbar-brand:hover {
-    color: aquamarine;
-  }
-
-  .navbar-brand span {
-    color: rgb(204, 204, 204);
   }
 
   #responsive-navbar-nav {
