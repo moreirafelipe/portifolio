@@ -20,6 +20,30 @@
   #responsive-navbar-nav {
     z-index: 3;
   }
+
+  .menu-item {
+    width: fit-content;
+  }
+
+  .menu-item:hover {
+    color: chartreuse;
+  }
+
+  .navbar-toggle {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    background-color: #000;
+
+    #mob-icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .navbar-toggle:active {
+    border: none;
+  }
 }
 
 .navbar.colorChange {
