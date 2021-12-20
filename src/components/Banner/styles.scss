@@ -11,7 +11,7 @@
 
 .container-banner,
 .content {
-  margin-top: 25px;
+  /*   margin-top: 25px; */
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   max-height: 300px;
+  object-fit: cover;
 
   .container-text {
     width: 100%;
