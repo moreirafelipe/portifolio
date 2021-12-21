@@ -1,38 +1,9 @@
 @import '../components/Variables/Variables.scss';
 
-#app {
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-
 #header {
   width: 100%;
   height: calc(100vh - 13rem);
   z-index: 3;
-}
-
-#form {
-  width: 100%;
-  height: 100vh;
-  margin: auto auto;
-}
-
-#skills {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-}
-
-#carousel {
-  //Estilos gerais do elemento
-  @include carouselStyles(100%, 90vh, none, auto);
-
-  div {
-    margin: auto;
-  }
-
-  z-index: 2;
 }
 
 footer {
@@ -40,11 +11,6 @@ footer {
   height: 20vh;
   height: auto;
   display: flex;
-}
-
-#start {
-  height: 120vh;
-  /* background-color: #000; */
 }
 
 section,
@@ -55,7 +21,7 @@ main {
 
 @media (min-width: 468px) {
 
-  #app {
+  .app {
     max-width: 1200px;
   }
 

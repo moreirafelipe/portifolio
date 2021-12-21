@@ -14,7 +14,7 @@ import calculadora from '../../assets/images/projects/calculadora.png';
 import felinos from '../../assets/images/projects/felinos.png';
 
 //Function component que exporta o componentcarousel
-export default function GridCarousel(props) {
+export function GridCarousel(props) {
 
   const responsive = {
     desktop: {
@@ -38,13 +38,13 @@ export default function GridCarousel(props) {
 
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
-    <div id="projetos" className="d-flex flex-column flex-wrap m-auto mt-5 pt-5">
+    <div id="projects" className="d-flex flex-column flex-wrap mx-auto mt-5 pt-5">
       <h3 className='mt-5'>Projects</h3>
       <div className="d-none d-md-block">
         <Quote />
       </div>
 
-      <Carousel className="carousel d-flex m-auto w-100"
+      <Carousel className="carousel d-flex m-auto w-100 mt-4"
         showDots={true}
         responsive={responsive}
         infinite={true}

@@ -16,12 +16,12 @@ import { ReactComponent as ReactSVG } from '../../assets/icons/react.svg';
 
 import './styles.scss'
 
-export default function Habilities() {
+export function Habilities() {
   return (
-    <div className="d-flex flex-row flex-wrap justify-content-center text-center align-content-center text-light bg-black mt-5 p-5">
-      <h3 className="w-100 text-center mt-5">Habilidades</h3>
-      <p>Abaixo, estão algumas das habilidades que estou desenvolvendo em projetos pessoais, acadêmicos e profissionais:</p>
-      <div className="container-icons d-flex flex-wrap flex-row justify-content-around py-5">
+    <div id="habilities" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-dark bg-white mt-5 p-5">
+      <h3 className="w-100 text-center mt-5">Habilities</h3>
+      <p>There are some skills that I've been worked with recently:</p>
+      <div className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center py-3">
         <BootstrapSVG className="skillIcon" />
         <ReactSVG className="skillIcon" />
         <SassSVG className="skillIcon" />

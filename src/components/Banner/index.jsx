@@ -23,7 +23,7 @@ import calculadora from '../../assets/images/projects/calculadora.png';
 
 import './styles.scss';
 
-export default function Banner() {
+export function Banner() {
 
   useEffect(() => {
 
@@ -38,7 +38,7 @@ export default function Banner() {
   })
 
   return (
-    <Container className='container-banner content'>
+    <Container id="start" className='container-banner content'>
       <div className="grid">
         <div className="grid__item pos-1"><div className="grid__item-img" style={{ backgroundImage: `url(${travelsbook})` }}></div></div>
         <div className="grid__item pos-2"><div className="grid__item-img" style={{ backgroundImage: `url(${calculadora})` }}></div></div>

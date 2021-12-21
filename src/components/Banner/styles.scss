@@ -9,24 +9,28 @@
   --cursor-stroke-width: 1px;
 }
 
+#start {
+  min-height: 100vh;
+  max-height: auto;
+}
+
 .container-banner,
 .content {
   /*   margin-top: 25px; */
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 100vh;
   position: relative;
   align-items: center;
   justify-content: center;
   max-height: 300px;
-  object-fit: cover;
+  /*   object-fit: cover; */
 
   .container-text {
     width: 100%;
     height: 20vh;
 
-    margin: -80% auto;
+    margin: 50% auto;
 
     img {
       width: 50px;
@@ -329,13 +333,10 @@ a:focus {
 
 @media (min-width: 468px) {
   .container-banner {
-    width: 100%;
-    height: 85vh;
-
     .container-text {
       width: 50%;
       height: 75%;
-      margin: auto;
+      margin: 10% auto;
     }
 
     .container-profile {

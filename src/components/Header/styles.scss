@@ -8,6 +8,8 @@
   z-index: 3;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 
   .navbar-brand {
     font-family: 'Roboto', sans-serif;

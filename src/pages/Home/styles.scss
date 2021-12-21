@@ -1,0 +1,49 @@
+#start {
+  height: 120vh;
+  /* background-color: #000; */
+}
+
+#carousel {
+  //Estilos gerais do elemento
+  @include carouselStyles(100%, 90vh, none, auto);
+
+  div {
+    margin: auto;
+  }
+
+  z-index: 2;
+}
+
+#skills {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+#form {
+  width: 100%;
+  height: 100vh;
+  margin: auto auto;
+}
+
+section,
+footer,
+main {
+  z-index: 2;
+}
+
+@media (min-width: 468px) {
+
+  #app {
+    max-width: 1200px;
+  }
+
+  footer {
+    width: 250px;
+    height: auto;
+  }
+
+  #carousel {
+    height: 100vh;
+  }
+}

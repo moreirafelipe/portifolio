@@ -21,7 +21,9 @@
     "react-images-loaded": "^2.0.0",
     "react-multi-carousel": "^2.6.5",
     "react-multi-carousel-jsm": "^2.7.0",
+    "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.2"
