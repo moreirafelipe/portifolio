@@ -9,7 +9,7 @@ const arrayData = [
     name: 'Amar e Cuidar',
     host: 'https://amar-e-cuidar-two.vercel.app/',
     repo: 'https://github.com/CTD-E-Commerce',
-    description: 'E-commerce web platform developed with React JS, Java, Spring, MySQL and distributed by AWS'
+    description: 'E-commerce platform developed with React JS, Java, Spring, MySQL and delivered by AWS'
   },
   {
     id: 2,
@@ -37,21 +37,21 @@ const arrayData = [
     name: 'Travels Book',
     host: 'https://moreirafelipe.github.io/dh-front2-checkpoint1/',
     repo: 'https://github.com/moreirafelipe/dh-front2-checkpoint1',
-    description: 'Design of a travel organization application using Vanilla Javascript, CSS 3 and LocalStoraging.'
+    description: 'Travel organization webb app using Vanilla JS, CSS 3 and LocalStoraging.'
   },
   {
     id: 6,
     name: 'Calculator',
     host: 'https://moreirafelipe.github.io/calculadora/',
     repo: 'https://github.com/moreirafelipe/calculadora',
-    description: 'Design of a simple calculator using Vanilla Javascript and CSS grid layout for the Front-end 2 course.'
+    description: 'Simple calculator using Vanilla Javascript and CSS grid layout for the Front-end 2 course.'
   },
   {
     id: 7,
     name: 'List of cats',
     host: 'https://moreirafelipe.github.io/dh-exercicioListaFelinos/',
     repo: 'https://github.com/moreirafelipe/dh-exercicioListaFelinos',
-    description: 'Project of an application developed in Vanilla Javascript that renders cards of animals in the DOM.'
+    description: 'Vanilla Javascript web-app which renders cards of animals in the DOM.'
   }
 ]
 
