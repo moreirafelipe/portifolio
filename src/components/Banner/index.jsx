@@ -13,7 +13,7 @@ import languageSVG from '../../assets/icons/language.svg';
 import amarFront from '../../assets/images/projects/amar-e-cuidar-front.png';
 import amarBack from '../../assets/images/projects/amar-e-cuidar-back.png';
 import odontoclinic from '../../assets/images/projects/odontoclinic.png';
-import dockerJenkins from '../../assets/images/projects/docker-jenkins.png';
+import memoryfighter from '../../assets/images/projects/memoryfighter.png';
 import profilePhoto from '../../assets/images/projects/profile.jpg';
 import travelsbook from '../../assets/images/projects/travelsbook.png';
 import todolist from '../../assets/images/projects/todolist.png';
@@ -43,7 +43,7 @@ export function Banner() {
         <div className="grid__item pos-1"><div className="grid__item-img" style={{ backgroundImage: `url(${travelsbook})` }}></div></div>
         <div className="grid__item pos-2"><div className="grid__item-img" style={{ backgroundImage: `url(${calculadora})` }}></div></div>
         <div className="grid__item pos-3"><div className="grid__item-img" style={{ backgroundImage: `url(${odontoclinic})` }}></div></div>
-        <div className="grid__item pos-4"><div className="grid__item-img" style={{ backgroundImage: `url(${dockerJenkins})` }}></div></div>
+        <div className="grid__item pos-4"><div className="grid__item-img" style={{ backgroundImage: `url(${memoryfighter})` }}></div></div>
         <div className="grid__item pos-5"><div className="grid__item-img" style={{ backgroundImage: `url(${profilePhoto})` }}></div></div>
         <div className="grid__item pos-6"><div className="grid__item-img" style={{ backgroundImage: `url(${trainiing})` }}></div></div>
         <div className="grid__item pos-7"><div className="grid__item-img" style={{ backgroundImage: `url(${todolist})` }}></div></div>
