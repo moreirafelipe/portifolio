@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ReactComponent as MenuSVG } from '../../assets/icons/menu.svg'
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import './styles.scss'
@@ -19,13 +18,25 @@ export default function Header() {
 
   window.addEventListener('scroll', changeNavbarColor);
 
+  const NavButton = () => {
+    return (
+      <div className="menu-icon">
+        <input className="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <Navbar className={colorChange ? 'navbar colorChange' : 'navbar'} collapseOnSelect expand="lg" variant={colorChange ? 'dark' : 'light'} >
       <Container>
         <Navbar.Brand href="#start" className="bg-black px-2 py-0">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
-        <Navbar.Toggle className="navbar-toggle p-1" aria-controls="responsive-navbar-nav" ><MenuSVG id="mob-icon" /></Navbar.Toggle >
+        <Navbar.Toggle className="navbar-toggle p-1" aria-controls="responsive-navbar-nav" ><NavButton /></Navbar.Toggle >
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="menu-list mx-2 fw-bold fs-5">
+          <Nav className="menu-list mt-2 fw-bold fs-5">
             <Nav.Link eventKey="1" as={Link} smooth to={"/#start"} className="bg-black text-light menu-item m-1 px-1" variant="black" ><span>Home</span></Nav.Link>
             <Nav.Link eventKey="2" as={Link} smooth to={"/#projects"} className="bg-black text-light menu-item m-1 px-1" ><span>Projects</span></Nav.Link>
             <Nav.Link eventKey="3" as={Link} smooth to={"/#habilities"} className="bg-black text-light menu-item m-1 px-1" ><span>Habilities</span></Nav.Link>
