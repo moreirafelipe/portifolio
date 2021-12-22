@@ -27,11 +27,14 @@
     z-index: 3;
   }
 
-  .menu-list {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-end;
+  @media (max-width: 600px) {
+
+    .menu-list {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: flex-end;
+    }
   }
 
   .menu-item {
