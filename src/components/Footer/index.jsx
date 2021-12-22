@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <section id="footer" className="bg-black text-light text-center pt-4">
       <div className="w-100">
-        <p>Fique a vontade para interagir através das minhas redes sociais!</p>
+        <p>Feel free to interact through my social media!</p>
       </div>
       <div id="medias">
         <div id="icons" className="d-flex align-items-center m-auto">
