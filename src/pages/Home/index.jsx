@@ -8,31 +8,31 @@ const arrayData = [
     name: 'Memory Fighter',
     host: 'https://moreirafelipe.github.io/memory-fighter/',
     repo: 'https://github.com/moreirafelipe/memory-fighter',
-    description: 'Jogo da memória que simula o menu do jogo Street Fighter com Vanilla Javascript e SASS.'
+    description: 'Memory game that simulates the Street Fighter game menu with Vanilla Javascript and SASS.'
   },
   {
     name: 'Travels Book',
     host: 'https://moreirafelipe.github.io/dh-front2-checkpoint1/',
     repo: 'https://github.com/moreirafelipe/dh-front2-checkpoint1',
-    description: 'Projeto de uma aplicação para organização de viajens utilizando Vanilla Javacript, CSS 3 e LocalStoraging.'
+    description: 'Design of a travel organization application using Vanilla Javascript, CSS 3 and LocalStoraging.'
   },
   {
     name: 'My Flix',
     host: 'https://dh-front3-myflix-46cjrfj0q-tstream.vercel.app/',
     repo: 'https://github.com/moreirafelipe/dh-front3-myflix',
-    description: 'Projeto de uma interface responsiva para uma plataforma de streaming utilizando React e CSS.'
+    description: 'Design of a responsive interface for a streaming platform using React and CSS.'
   },
   {
-    name: 'Calculadora',
+    name: 'Calculator',
     host: 'https://moreirafelipe.github.io/calculadora/',
     repo: 'https://github.com/moreirafelipe/calculadora',
-    description: 'Projeto de uma calculadora simples utilizando Vanilla Javascript e CSS grid layout para a disciplina Front-end 2.'
+    description: 'Design of a simple calculator using Vanilla Javascript and CSS grid layout for the Front-end 2 course.'
   },
   {
-    name: 'Lista de felinos',
+    name: 'List of cats',
     host: 'https://moreirafelipe.github.io/dh-exercicioListaFelinos/',
     repo: 'https://github.com/moreirafelipe/dh-exercicioListaFelinos',
-    description: 'Projeto de uma aplicação desenvolvida em Vanilla Javascript que renderiza cards de animais no DOM.'
+    description: 'Project of an application developed in Vanilla Javascript that renders cards of animals in the DOM.'
   }
 ]
 

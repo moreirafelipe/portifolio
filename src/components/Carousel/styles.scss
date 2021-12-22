@@ -13,4 +13,19 @@
 
   //Estilos gerais do elemento
   @include carouselStyles(95vw, auto, none, $textShadow);
+
+  .btn-light,
+  .btn-outline-success {
+    transition: all .1s ease-in-out;
+    border-radius: 0;
+  }
+
+  .btn-light:hover,
+  .btn-outline-success:hover {
+    transform: scale(1.07) skew(-1deg, -1deg);
+  }
+
+  .btn-outline {
+    background-color: rgb(72, 255, 0);
+  }
 }

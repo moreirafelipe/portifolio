@@ -69,7 +69,7 @@ export function Banner() {
 
                   .changeDeleteSpeed(1)
 
-                  .typeString("<br>I'm ")
+                  .typeString("<br>I'm a ")
                   .typeString(`Full-stack developer <img src=${webSVG} alt="developer">`)
                   .pauseFor(1000)
                   .deleteChars(21)

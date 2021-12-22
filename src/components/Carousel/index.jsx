@@ -64,8 +64,8 @@ export function GridCarousel(props) {
                   <h5 className="card-title">{project.name}</h5>
                   <p className="card-text">{project.description}</p>
                   <div id="card-buttons">
-                    <a href={project.host} className="btn btn-primary">Access</a>
-                    <a href={project.repo} className="btn btn-light mx-2">Repository</a>
+                    <a href={project.host} className="btn btn-light fw-bold fs-6">Access</a>
+                    <a href={project.repo} className="btn btn-outline-success mx-2 fw-bold fs-6">Repository</a>
                   </div>
                 </div>
               </div>
