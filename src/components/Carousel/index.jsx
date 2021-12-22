@@ -7,9 +7,11 @@ import Quote from '../Quote';
 import './styles.scss'
 
 //Importando imagens PNG
+import amarCuidar from '../../assets/images/projects/amar-e-cuidar-front.png'
+import todolist from '../../assets/images/projects/todolist.png'
+import odontoclinic from '../../assets/images/projects/odontoclinic.png'
 import memoryfighter from '../../assets/images/projects/memoryfighter.png'
 import travelsbook from '../../assets/images/projects/travelsbook.png';
-import myFlix from '../../assets/images/projects/myflix.png';
 import calculadora from '../../assets/images/projects/calculadora.png';
 import felinos from '../../assets/images/projects/felinos.png';
 
@@ -34,7 +36,7 @@ export function GridCarousel(props) {
     }
   };
 
-  const imgName = [memoryfighter, travelsbook, myFlix, calculadora, felinos];
+  const imgName = [amarCuidar, odontoclinic, todolist, memoryfighter, travelsbook, calculadora, felinos];
 
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
