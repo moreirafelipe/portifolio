@@ -19,8 +19,8 @@ import './styles.scss'
 export function Habilities() {
   return (
     <div id="habilities" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-white bg-black mt-5 p-5">
-      <h3 className="w-100 text-center mt-5">Habilities</h3>
-      <p>There are some skills that I've been worked with recently:</p>
+      <h3 className="w-100 text-center mt-5">Hard Skills</h3>
+      <p>There are some skills that I've been working with recently:</p>
       <div className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center py-3">
         <BootstrapSVG className="skillIcon" />
         <ReactSVG className="skillIcon" />
