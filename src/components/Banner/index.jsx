@@ -64,25 +64,25 @@ export function Banner() {
                   .typeString("Welcome!")
                   .pauseFor(1000)
 
-                  .typeString("<br>My name is Felipe!")
+                  .typeString("<br>My name is Felipe Moreira!")
                   .pauseFor(1000)
 
                   .changeDeleteSpeed(1)
 
-                  .typeString("<br>I'm a ")
-                  .typeString(`Full-stack developer <img src=${webSVG} alt="developer">`)
+                  .typeString("<br>I'm ")
+                  .typeString(`a Full-stack developer <img src=${webSVG} alt="developer">`)
                   .pauseFor(1000)
-                  .deleteChars(21)
+                  .deleteChars(23)
 
-                  .typeString(`Languages student <img src=${languageSVG} alt="languages">`)
-                  .pauseFor(1000)
-                  .deleteChars(18)
-
-                  .typeString(`Engineering student <img src=${enginnerSVG} alt="engineer">`)
+                  .typeString(`a Languages student <img src=${languageSVG} alt="languages">`)
                   .pauseFor(1000)
                   .deleteChars(20)
 
-                  .typeString("Software Engineer!")
+                  .typeString(`an Engineering student <img src=${enginnerSVG} alt="engineer">`)
+                  .pauseFor(1000)
+                  .deleteChars(23)
+
+                  .typeString("a Software Engineer!")
                   .typeString(`<br><img src=${webSVG} alt="developer">`)
                   .typeString(`<img src=${languageSVG} alt="developer">`)
                   .typeString(`<img src=${enginnerSVG} alt="developer">`)
