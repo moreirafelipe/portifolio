@@ -12,6 +12,7 @@
 #start {
   min-height: 100vh;
   max-height: auto;
+  object-fit: contain;
 }
 
 .container-banner,
@@ -333,6 +334,8 @@ a:focus {
 
 @media (min-width: 468px) {
   .container-banner {
+    object-fit: contain;
+
     .container-text {
       width: 50%;
       height: 75%;
@@ -352,7 +355,7 @@ a:focus {
 
   .grid__item-img {
     position: relative;
-    width: 100%;
+    width: 150%;
     height: 100%;
     background-size: cover;
     background-position: 50% 50%;
