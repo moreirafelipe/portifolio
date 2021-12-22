@@ -22,8 +22,8 @@ export default function Header() {
   return (
     <Navbar className={colorChange ? 'navbar colorChange' : 'navbar'} collapseOnSelect expand="lg" variant={colorChange ? 'dark' : 'light'} >
       <Container>
-        <Navbar.Brand href="#start" className="bg-black text-info px-2">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
-        <Navbar.Toggle className="navbar-toggle" aria-controls="responsive-navbar-nav" ><MenuSVG id="mob-icon" /></Navbar.Toggle >
+        <Navbar.Brand href="#start" className="bg-black text-info px-2 py-0">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
+        <Navbar.Toggle className="navbar-toggle p-1" aria-controls="responsive-navbar-nav" ><MenuSVG id="mob-icon" /></Navbar.Toggle >
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="menu-list mx-2 fw-bold fs-5">
             <Nav.Link eventKey="1" as={Link} smooth to={"/#start"} className="bg-black text-light menu-item m-1 px-1" >Home</Nav.Link>
