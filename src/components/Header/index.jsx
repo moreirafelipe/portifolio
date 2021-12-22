@@ -22,14 +22,14 @@ export default function Header() {
   return (
     <Navbar className={colorChange ? 'navbar colorChange' : 'navbar'} collapseOnSelect expand="lg" variant={colorChange ? 'dark' : 'light'} >
       <Container>
-        <Navbar.Brand href="#start" className="bg-black text-info px-2 py-0">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
+        <Navbar.Brand href="#start" className="bg-black px-2 py-0">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
         <Navbar.Toggle className="navbar-toggle p-1" aria-controls="responsive-navbar-nav" ><MenuSVG id="mob-icon" /></Navbar.Toggle >
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="menu-list mx-2 fw-bold fs-5">
-            <Nav.Link eventKey="1" as={Link} smooth to={"/#start"} className="bg-black text-light menu-item m-1 px-1" >Home</Nav.Link>
-            <Nav.Link eventKey="2" as={Link} smooth to={"/#projects"} className="bg-black text-light menu-item m-1 px-1" >Projects</Nav.Link>
-            <Nav.Link eventKey="3" as={Link} smooth to={"/#habilities"} className="bg-black text-light menu-item m-1 px-1" >Habilities</Nav.Link>
-            <Nav.Link eventKey="4" as={Link} smooth to={"/#footer"} className="bg-black text-light menu-item m-1 px-1" >Contact</Nav.Link>
+            <Nav.Link eventKey="1" as={Link} smooth to={"/#start"} className="bg-black text-light menu-item m-1 px-1" variant="black" ><span>Home</span></Nav.Link>
+            <Nav.Link eventKey="2" as={Link} smooth to={"/#projects"} className="bg-black text-light menu-item m-1 px-1" ><span>Projects</span></Nav.Link>
+            <Nav.Link eventKey="3" as={Link} smooth to={"/#habilities"} className="bg-black text-light menu-item m-1 px-1" ><span>Habilities</span></Nav.Link>
+            <Nav.Link eventKey="4" as={Link} smooth to={"/#footer"} className="bg-black text-light menu-item m-1 px-1" ><span>Contact</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
