@@ -5,14 +5,16 @@ import './styles.scss'
 
 export default function Header() {
 
-  const [colorChange, setColorchange] = useState(false);
+  const [colorChange, setColorChange] = useState(false);
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
-      setColorchange(true);
+      setColorChange(true);
+      return document.querySelector('.show') ? document.querySelector('.menu-icon__cheeckbox').checked = true : document.querySelector('.menu-icon__cheeckbox').checked = false;
     }
     else {
-      setColorchange(false);
+      setColorChange(false);
+      return document.querySelector('.show') ? document.querySelector('.menu-icon__cheeckbox').checked = true : document.querySelector('.menu-icon__cheeckbox').checked = false;
     }
   };
 
