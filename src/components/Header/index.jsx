@@ -31,7 +31,7 @@ export default function Header() {
   }
 
   return (
-    <Navbar className={colorChange ? 'navbar colorChange' : 'navbar'} collapseOnSelect expand="lg" variant={colorChange ? 'dark' : 'light'} >
+    <Navbar className={colorChange ? 'navbar colorChange' : null} collapseOnSelect expand="lg" variant={colorChange ? 'dark' : 'light'} >
       <Container>
         <Navbar.Brand href="#start" className="bg-black px-2 py-0">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
         <Navbar.Toggle className="navbar-toggle p-1" aria-controls="responsive-navbar-nav" ><NavButton /></Navbar.Toggle >

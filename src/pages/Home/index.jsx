@@ -28,7 +28,7 @@ const arrayData = [
     host: 'https://amar-e-cuidar-two.vercel.app/',
     repo: 'https://github.com/CTD-E-Commerce',
     description: 'Buy or sell selected products through thiis cloud based e-commerce platform.',
-    technologies: [<SassSVG />, <ReactBootstrapSVG />, <ReactSVG />, <MySqlSVG />, <AwsSVG />]
+    technologies: [<SassSVG />, <ReactSVG />, <SpringSVG />, <MySqlSVG />, <AwsSVG />]
   },
   {
     id: 2,
