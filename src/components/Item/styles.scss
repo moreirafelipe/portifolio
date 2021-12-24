@@ -52,13 +52,13 @@
   }
 
   img {
-    height: 30vh;
+    height: 26vh;
     object-fit: cover;
   }
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(1.001);
 }
 
 @media (min-width: 468) {
