@@ -53,7 +53,7 @@ export function GridCarousel(props) {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
         renderArrowsWhenDisabled={true}
-        autoPlay={true}
+        autoPlay={false}
         autoPlaySpeed={10000}
         arrows={true}
       >

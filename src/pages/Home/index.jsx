@@ -27,7 +27,7 @@ const arrayData = [
     name: 'Amar e Cuidar',
     host: 'https://amar-e-cuidar-two.vercel.app/',
     repo: 'https://github.com/CTD-E-Commerce',
-    description: 'Buy or sell selected products through thiis cloud based e-commerce platform.',
+    description: 'Buy or sell selected products through this cloud based e-commerce platform.',
     technologies: [<SassSVG />, <ReactSVG />, <SpringSVG />, <MySqlSVG />, <AwsSVG />]
   },
   {
@@ -39,7 +39,7 @@ const arrayData = [
   },
   {
     id: 3,
-    name: 'ACAMASYS - Academic Managment System',
+    name: 'ACMASYS - Academic Managment System',
     repo: 'https://github.com/moreirafelipe/dh-poo-checkpoint1',
     description: 'Academic management system which organizes classes.',
     technologies: [<JavaSVG />]
