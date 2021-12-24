@@ -1,7 +1,7 @@
-import { ReactComponent as BootstrapSVG } from '../../assets/icons/bootstrap_skill.svg';
-import { ReactComponent as CSVG } from '../../assets/icons/c.svg';
-import { ReactComponent as CPlusSVG } from '../../assets/icons/cplus.svg';
-import { ReactComponent as CSharpSVG } from '../../assets/icons/cSharp.svg';
+import { ReactComponent as ReactBootstrapSVG } from '../../assets/icons/react-bootstrap.svg';
+import { ReactComponent as AwsSVG } from '../../assets/icons/aws.svg';
+import { ReactComponent as DockerSVG } from '../../assets/icons/docker.svg';
+import { ReactComponent as JenkinsSVG } from '../../assets/icons/jenkins.svg';
 import { ReactComponent as JavaSVG } from '../../assets/icons/java.svg';
 import { ReactComponent as SpringSVG } from '../../assets/icons/spring.svg';
 import { ReactComponent as PythonSVG } from '../../assets/icons/python.svg';
@@ -22,21 +22,21 @@ export function Habilities() {
       <h3 className="w-100 text-center mt-5">Hard Skills</h3>
       <p>There are some skills that I've been working with recently:</p>
       <div className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center py-3">
-        <BootstrapSVG className="skillIcon" />
+        <JavascriptSVG className="skillIcon" />
+        <NodeSVG className="skillIcon" />
         <ReactSVG className="skillIcon" />
+        <ReactBootstrapSVG className="skillIcon" />
         <SassSVG className="skillIcon" />
-        <CSVG className="skillIcon" />
-        <CPlusSVG className="skillIcon" />
-        <CSharpSVG className="skillIcon" />
         <JavaSVG className="skillIcon" />
         <SpringSVG className="skillIcon" />
         <PythonSVG className="skillIcon" />
         <DjangoSVG className="skillIcon bg-light px-2" />
-        <JavascriptSVG className="skillIcon" />
-        <NodeSVG className="skillIcon" />
         <SqlServerSVG className="skillIcon" />
         <MySqlSVG className="skillIcon" />
         <MongoDbSVG className="skillIcon" />
+        <DockerSVG className="skillIcon" />
+        <JenkinsSVG className="skillIcon" />
+        <AwsSVG className="skillIcon" />
       </div>
     </div>
   )

@@ -65,8 +65,13 @@ export function GridCarousel(props) {
                 <div className="card-body mb-5">
                   <h5 className="card-title">{project.name}</h5>
                   <p className="card-text">{project.description}</p>
+                  <ul key={index}>
+                    {project.technologies.length > 0 && (project.technologies.map((technology, idx) => {
+                      return <li key={idx}>{technology}</li>
+                    }))}
+                  </ul>
                   <div id="card-buttons">
-                    <a href={project.host} className="btn btn-light fw-bold fs-6">Access</a>
+                    {project.host != null ? (<a href={project.host} className="btn btn-light fw-bold fs-6">Access</a>) : null}
                     <a href={project.repo} className="btn btn-outline-success mx-2 fw-bold fs-6">Repository</a>
                   </div>
                 </div>

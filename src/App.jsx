@@ -10,15 +10,6 @@ function App() {
     <div className="App">
       <Router>
         <Header id="header" />
-        {/*       <main id="start">
-        <Banner />
-      </main>
-      <section id="projects">
-        {windowWidth > 700 ? (<GridCarousel projects={arrayData} show={3.5} />) : (<GridCarousel id="carousel" projects={arrayData} show={1} />)}
-      </section>
-      <section id="habilities">
-        <Habilities />
-      </section> */}
         <RouteList />
         <Footer id="about" />
       </Router >
