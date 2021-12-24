@@ -71,8 +71,8 @@ export function GridCarousel(props) {
                     }))}
                   </ul>
                   <div id="card-buttons">
-                    {project.host != null ? (<a href={project.host} className="btn btn-light fw-bold fs-6">Access</a>) : null}
-                    <a href={project.repo} className="btn btn-outline-success mx-2 fw-bold fs-6">Repository</a>
+                    {project.host != null ? (<a href={project.host} target={"_blank"} rel='noreferrer' className="btn btn-light fw-bold fs-6">Access</a>) : null}
+                    <a href={project.repo} target={"_blank"} rel='noreferrer' className="btn btn-outline-success mx-2 fw-bold fs-6">Repository</a>
                   </div>
                 </div>
               </div>

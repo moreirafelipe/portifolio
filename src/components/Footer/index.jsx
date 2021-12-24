@@ -23,9 +23,9 @@ export default function Footer() {
           <p>&#169; 2021</p>
         </div>
         <div id="contact" className="d-flex flex-row align-items-center m-auto">
-          <a href="https://www.linkedin.com/in/felipen20/"><FontAwesomeIcon icon={faLinkedin} className="mx-2 h3" /></a>
-          <a href="mailto:felipe.saint@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="mx-2 h3" /></a>
-          <a href="https://github.com/moreirafelipe"><FontAwesomeIcon icon={faGithub} className="mx-2 h3" /></a>
+          <a href="https://www.linkedin.com/in/felipen20/" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} className="mx-2 h3" /></a>
+          <a href="mailto:felipe.saint@gmail.com" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faEnvelope} className="mx-2 h3" /></a>
+          <a href="https://github.com/moreirafelipe" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faGithub} className="mx-2 h3" /></a>
         </div>
       </div>
     </section>
