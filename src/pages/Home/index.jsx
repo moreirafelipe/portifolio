@@ -27,21 +27,21 @@ const arrayData = [
     name: 'Amar e Cuidar',
     host: 'https://amar-e-cuidar-two.vercel.app/',
     repo: 'https://github.com/CTD-E-Commerce',
-    description: 'E-commerce platform developed with React JS, Java, Spring, MySQL and delivered by AWS.',
-    technologies: [<ReactBootstrapSVG />, <ReactSVG />, <SassSVG />, <MySqlSVG />, <AwsSVG />]
+    description: 'Buy or sell selected products through thiis cloud based e-commerce platform.',
+    technologies: [<SassSVG />, <ReactBootstrapSVG />, <ReactSVG />, <MySqlSVG />, <AwsSVG />]
   },
   {
     id: 2,
     name: 'Odontoclinic',
     repo: 'https://github.com/moreirafelipe/odontoclinic-api-service',
-    description: 'Rest API Service developed with Java, Spring Boot and Log4J.',
+    description: 'Provide appointments for your odontologic platform with this Rest API Service.',
     technologies: [<JavaSVG />, <SpringSVG />]
   },
   {
     id: 3,
     name: 'ACAMASYS - Academic Managment System',
     repo: 'https://github.com/moreirafelipe/dh-poo-checkpoint1',
-    description: 'Academic management system for classes management using Java 17 with data handling.',
+    description: 'Academic management system which organizes classes management.',
     technologies: [<JavaSVG />]
   },
   {
@@ -49,32 +49,32 @@ const arrayData = [
     name: 'To-do list',
     host: 'https://dh-front-end-02-checkpoint-02.github.io/Projeto-To-Do/',
     repo: 'https://github.com/DH-Front-End-02-Checkpoint-02/Projeto-To-Do',
-    description: 'Web aplication for tasks management developed in HTML, CSS and Vanilla Javascript.',
-    technologies: [<JavascriptSVG />, <CssSVG />]
+    description: 'Keep up your tasks with this simple web app organizer.',
+    technologies: [<CssSVG />, <JavascriptSVG />]
   },
   {
     id: 5,
     name: 'Memory Fighter',
     host: 'https://moreirafelipe.github.io/memory-fighter/',
     repo: 'https://github.com/moreirafelipe/memory-fighter',
-    description: 'Memory game that simulates the Street Fighter game menu with Vanilla Javascript and Sass.',
-    technologies: [<JavascriptSVG />, <SassSVG />]
+    description: 'Go Back in time with this Street Fighter Memory game.',
+    technologies: [<SassSVG />, <JavascriptSVG />]
   },
   {
     id: 6,
     name: 'Travels Book',
     host: 'https://moreirafelipe.github.io/dh-front2-checkpoint1/',
     repo: 'https://github.com/moreirafelipe/dh-front2-checkpoint1',
-    description: 'Travel organization webb app using Vanilla JS, CSS 3 and LocalStoraging.',
-    technologies: [<JavascriptSVG />, <CssSVG />]
+    description: 'Plan your next vacations and keep your preferences saved with this travels web app.',
+    technologies: [<CssSVG />, <JavascriptSVG />]
   },
   {
     id: 7,
     name: 'Calculator',
     host: 'https://moreirafelipe.github.io/calculadora/',
     repo: 'https://github.com/moreirafelipe/calculadora',
-    description: 'Simple calculator using Vanilla Javascript and CSS grid layout for the Front-end 2 course.',
-    technologies: [<JavascriptSVG />, <CssSVG />]
+    description: 'Save your brain automating simple calcs.',
+    technologies: [<CssSVG />, <JavascriptSVG />]
   }
 ]
 

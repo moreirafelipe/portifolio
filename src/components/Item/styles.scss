@@ -23,6 +23,14 @@
     bottom: 25px;
   }
 
+  .card-body {
+
+    h5,
+    p {
+      margin-left: 0;
+    }
+  }
+
   ul {
     display: flex;
     flex-flow: row nowrap;
@@ -44,7 +52,7 @@
   }
 
   img {
-    height: 23vh;
+    height: 30vh;
     object-fit: cover;
   }
 }
