@@ -27,15 +27,14 @@ const arrayData = [
     id: 1,
     name: 'Amar e Cuidar - Front-End',
     host: 'https://amar-e-cuidar-two.vercel.app/',
-    repo: 'https://github.com/CTD-E-Commerce',
+    repo: 'https://github.com/CTD-E-Commerce/ctd-ecommerce-front',
     description: 'Front-end layer for the cloud based e-commerce platform Amar e cuidar.',
     technologies: [<SassSVG />, <ReactSVG />, <ReactBootstrapSVG />]
   },
   {
     id: 2,
     name: 'Amar e Cuidar - Back-End',
-    host: 'https://amar-e-cuidar-two.vercel.app/',
-    repo: 'https://github.com/CTD-E-Commerce',
+    repo: 'https://github.com/CTD-E-Commerce/ctd-ecommerce-back',
     description: 'Back-end layer for the cloud based e-commerce platform Amar e cuidar.',
     technologies: [<SpringSVG />, <MySqlSVG />, <AwsSVG />]
   },
