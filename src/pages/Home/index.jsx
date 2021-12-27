@@ -1,6 +1,7 @@
 import { Banner } from "../../components/Banner";
 import { GridCarousel } from "../../components/Carousel";
 import { Habilities } from "../../components/Habilities";
+import TopArrow from "../../components/TopArrow";
 
 //Importando icones de tecnologias
 import { ReactComponent as ReactBootstrapSVG } from '../../assets/icons/react-bootstrap.svg';

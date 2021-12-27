@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import TypewriterComponent from 'typewriter-effect';
 
@@ -41,15 +42,15 @@ export function Banner() {
     <Container id="start" className='container-banner content'>
       <div className="grid">
         <div className="grid__item pos-1"><div className="grid__item-img" style={{ backgroundImage: `url(${travelsbook})` }}></div></div>
-        <div className="grid__item pos-2"><div className="grid__item-img" style={{ backgroundImage: `url(${calculadora})` }}></div></div>
+        <div className="grid__item pos-2"><div className="grid__item-img" style={{ backgroundImage: `url(${univesp})` }}></div></div>
         <div className="grid__item pos-3"><div className="grid__item-img" style={{ backgroundImage: `url(${odontoclinic})` }}></div></div>
-        <div className="grid__item pos-4"><div className="grid__item-img" style={{ backgroundImage: `url(${memoryfighter})` }}></div></div>
+        <div className="grid__item pos-4"><div className="grid__item-img" style={{ backgroundImage: `url(${amarFront})` }}></div></div>
         <div className="grid__item pos-5"><div className="grid__item-img" style={{ backgroundImage: `url(${profilePhoto})` }}></div></div>
         <div className="grid__item pos-6"><div className="grid__item-img" style={{ backgroundImage: `url(${trainiing})` }}></div></div>
         <div className="grid__item pos-7"><div className="grid__item-img" style={{ backgroundImage: `url(${todolist})` }}></div></div>
-        <div className="grid__item pos-8"><div className="grid__item-img" style={{ backgroundImage: `url(${univesp})` }}></div></div>
+        <div className="grid__item pos-8"><div className="grid__item-img" style={{ backgroundImage: `url(${calculadora})` }}></div></div>
         <div className="grid__item pos-9"><div className="grid__item-img" style={{ backgroundImage: `url(${amarBack})` }}></div></div>
-        <div className="grid__item pos-10"><div className="grid__item-img" style={{ backgroundImage: `url(${amarFront})` }}></div></div>
+        <div className="grid__item pos-10"><div className="grid__item-img" style={{ backgroundImage: `url(${memoryfighter})` }}></div></div>
       </div>
 
       <Row className="d-flex justify-content-around align-items-center mt-5 pt-5 w-100 text-center content__title no-select">
@@ -90,7 +91,11 @@ export function Banner() {
               }}
             />
           </span>
-
+        </Col>
+      </Row>
+      <Row className="row-down-arrow">
+        <Col className='col-down-arrow text-center display-6 ca3-scroll-down-link ca3-scroll-down-arrow mt-4 pt-2' data-ca3_iconfont="ETmodules" data-ca3_icon="" xs={12} md={12}>
+          <Link to={"#projects"} className="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></Link>
         </Col>
       </Row>
     </Container >

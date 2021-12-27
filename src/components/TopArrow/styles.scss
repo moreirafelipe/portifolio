@@ -1,0 +1,104 @@
+#hidden-buttom {
+  display: none;
+}
+
+#back-buttom {
+
+  .row-up-arrow {
+    background-color: #000;
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    margin: 0px 0 0 -40px;
+    z-index: 100;
+
+    .col-up-arrow {
+      [data-ca3_icon]::before {
+        font-weight: normal;
+        content: attr(data-ca3_icon);
+      }
+
+      .ca3-scroll-up-arrow {
+        width: 60px;
+        height: 60px;
+        z-index: 1000;
+
+        background-image: url('../../assets/icons/back-buttom.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .ca3-scroll-up-link {
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        line-height: 60px;
+        position: absolute;
+        left: 60%;
+        bottom: 0;
+        margin: 0px 0 0 -30px;
+        color: #FFF;
+        text-align: center;
+        font-size: 70px;
+        z-index: 100;
+        text-decoration: none;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+      }
+
+      .ca3-scroll-up-link:hover {
+
+        color: rgb(43, 255, 0);
+        -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+        -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
+        animation: ca3_fade_move_down 2s ease-in-out infinite;
+      }
+
+    }
+  }
+
+  /*animated scroll arrow animation*/
+  @-webkit-keyframes ca3_fade_move_down {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @-moz-keyframes ca3_fade_move_down {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes ca3_fade_move_down {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
