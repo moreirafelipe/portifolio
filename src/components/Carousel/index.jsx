@@ -7,10 +7,10 @@ import Quote from '../Quote';
 import './styles.scss'
 
 //Importando imagens PNG
-import amarCuidar from '../../assets/images/projects/amar-e-cuidar-front.png';
+import amarCuidarFront from '../../assets/images/projects/amar-e-cuidar-front.png';
+import amarCuidarBack from '../../assets/images/projects/amar-e-cuidar-back.png';
 import odontoclinic from '../../assets/images/projects/odontoclinic.png';
 import acamasys from '../../assets/images/projects/acamasys.png';
-import todolist from '../../assets/images/projects/todolist.png';
 import memoryfighter from '../../assets/images/projects/memoryfighter.png';
 import travelsbook from '../../assets/images/projects/travelsbook.png';
 import calculadora from '../../assets/images/projects/calculadora.png';
@@ -36,7 +36,7 @@ export function GridCarousel(props) {
     }
   };
 
-  const imgName = [amarCuidar, odontoclinic, acamasys, todolist, memoryfighter, travelsbook, calculadora];
+  const imgName = [amarCuidarFront, amarCuidarBack, odontoclinic, acamasys, memoryfighter, travelsbook, calculadora];
 
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (

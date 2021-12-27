@@ -7,7 +7,7 @@ const TopArrow = () => {
   const [topArrow, setTopArrow] = useState(false);
 
   const changeButtomState = () => {
-    if (window.scrollY >= 580) {
+    if (window.scrollY >= 100) {
       setTopArrow(true);
     }
     else {

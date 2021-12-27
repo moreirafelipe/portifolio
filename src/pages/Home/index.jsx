@@ -25,33 +25,33 @@ import { ReactComponent as ReactSVG } from '../../assets/icons/react.svg';
 const arrayData = [
   {
     id: 1,
-    name: 'Amar e Cuidar',
+    name: 'Amar e Cuidar - Front-End',
     host: 'https://amar-e-cuidar-two.vercel.app/',
     repo: 'https://github.com/CTD-E-Commerce',
-    description: 'Buy or sell selected products through this cloud based e-commerce platform.',
-    technologies: [<SassSVG />, <ReactSVG />, <SpringSVG />, <MySqlSVG />, <AwsSVG />]
+    description: 'Front-end layer for the cloud based e-commerce platform Amar e cuidar.',
+    technologies: [<SassSVG />, <ReactSVG />, <ReactBootstrapSVG />]
   },
   {
     id: 2,
+    name: 'Amar e Cuidar - Back-End',
+    host: 'https://amar-e-cuidar-two.vercel.app/',
+    repo: 'https://github.com/CTD-E-Commerce',
+    description: 'Back-end layer for the cloud based e-commerce platform Amar e cuidar.',
+    technologies: [<SpringSVG />, <MySqlSVG />, <AwsSVG />]
+  },
+  {
+    id: 3,
     name: 'Odontoclinic',
     repo: 'https://github.com/moreirafelipe/odontoclinic-api-service',
     description: 'Provide appointments for your odontologic platform with this Rest API Service.',
     technologies: [<JavaSVG />, <SpringSVG />]
   },
   {
-    id: 3,
+    id: 4,
     name: 'ACMASYS - Academic Managment System',
     repo: 'https://github.com/moreirafelipe/dh-poo-checkpoint1',
     description: 'Academic management system which organizes classes.',
     technologies: [<JavaSVG />]
-  },
-  {
-    id: 4,
-    name: 'To-do list',
-    host: 'https://dh-front-end-02-checkpoint-02.github.io/Projeto-To-Do/',
-    repo: 'https://github.com/DH-Front-End-02-Checkpoint-02/Projeto-To-Do',
-    description: 'Keep up your tasks with this simple web app organizer.',
-    technologies: [<CssSVG />, <JavascriptSVG />]
   },
   {
     id: 5,
