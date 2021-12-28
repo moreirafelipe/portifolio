@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import TypewriterComponent from 'typewriter-effect';
+import TopArrow from '../TopArrow';
+import downArrowSVG from '../../assets/icons/down-buttom.svg'
 
 import Grid from '../Grid/grid';
 import { preloadImages } from '../../utils/utils';
@@ -53,7 +55,7 @@ export function Banner() {
         <div className="grid__item pos-10"><div className="grid__item-img" style={{ backgroundImage: `url(${memoryfighter})` }}></div></div>
       </div>
 
-      <Row className="d-flex justify-content-around align-items-center mt-5 pt-5 w-100 text-center content__title no-select">
+      <Row className="d-flex justify-content-around align-items-center mt-5 pt-2 w-100 text-center content__title no-select">
         <Col className='container-text text-center display-6 mt-4 pt-2' xs={12} md={12}>
 
           <span id="text-writing">
@@ -65,10 +67,10 @@ export function Banner() {
                   .typeString("Welcome!")
                   .pauseFor(1000)
 
-                  .typeString("<br>My name is Felipe Moreira!")
+                  .typeString("<br>My name is Felipe!")
                   .pauseFor(1000)
 
-                  .changeDeleteSpeed(1)
+                  .changeDeleteSpeed(.5)
 
                   .typeString("<br>I'm ")
                   .typeString(`a Full-stack developer <img src=${webSVG} alt="developer">`)
@@ -87,15 +89,12 @@ export function Banner() {
                   .typeString(`<br><img src=${webSVG} alt="developer">`)
                   .typeString(`<img src=${languageSVG} alt="developer">`)
                   .typeString(`<img src=${enginnerSVG} alt="developer">`)
+
+                  .typeString(`<br><br>Check my work bellow <a href="#projects"><img src=${downArrowSVG}></a>`)
                   .start();
               }}
             />
           </span>
-        </Col>
-      </Row>
-      <Row className="row-down-arrow">
-        <Col className='col-down-arrow text-center display-6 ca3-scroll-down-link ca3-scroll-down-arrow mt-4 pt-2' data-ca3_iconfont="ETmodules" data-ca3_icon="" xs={12} md={12}>
-          <Link to={"#projects"} className="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></Link>
         </Col>
       </Row>
     </Container >
