@@ -40,9 +40,9 @@ export default function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="menu-list mt-2 fw-bold fs-5">
             <Nav.Link eventKey="1" as={Link} smooth to={"/#start"} className="bg-black text-light menu-item m-1 px-1" variant="black" ><span>Home</span></Nav.Link>
+            <Nav.Link eventKey="4" as={Link} smooth to={"/#about"} className="bg-black text-light menu-item m-1 px-1" ><span>About me</span></Nav.Link>
             <Nav.Link eventKey="2" as={Link} smooth to={"/#projects"} className="bg-black text-light menu-item m-1 px-1" ><span>Projects</span></Nav.Link>
             <Nav.Link eventKey="3" as={Link} smooth to={"/#habilities"} className="bg-black text-light menu-item m-1 px-1" ><span>Hard Skills</span></Nav.Link>
-            <Nav.Link eventKey="4" as={Link} smooth to={"/#footer"} className="bg-black text-light menu-item m-1 px-1" ><span>Contact</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
