@@ -41,7 +41,7 @@ export function Banner() {
   })
 
   return (
-    <Container id="start" className='container-banner content'>
+    <div id="start" className='container-banner content'>
       <div className="grid">
         <div className="grid__item pos-1"><div className="grid__item-img" style={{ backgroundImage: `url(${travelsbook})` }}></div></div>
         <div className="grid__item pos-2"><div className="grid__item-img" style={{ backgroundImage: `url(${univesp})` }}></div></div>
@@ -55,8 +55,8 @@ export function Banner() {
         <div className="grid__item pos-10"><div className="grid__item-img" style={{ backgroundImage: `url(${memoryfighter})` }}></div></div>
       </div>
 
-      <Row className="d-flex justify-content-around align-items-center mt-5 pt-2 w-100 text-center content__title no-select">
-        <Col className='container-text text-center display-6 mt-4 pt-2' xs={12} md={12}>
+      <Row className="d-flex justify-content-between align-items-center mt-5 pt-2 w-100 text-center content__title no-select">
+        <Col className='container-text text-center display-6 mt-5 pt-2' xs={12} md={12}>
 
           <span id="text-writing">
             <TypewriterComponent
@@ -97,6 +97,6 @@ export function Banner() {
           </span>
         </Col>
       </Row>
-    </Container >
+    </div >
   )
 }

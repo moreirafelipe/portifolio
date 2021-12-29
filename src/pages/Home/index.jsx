@@ -1,6 +1,7 @@
 import { Banner } from "../../components/Banner";
 import { GridCarousel } from "../../components/Carousel";
 import { Habilities } from "../../components/Habilities";
+import { About } from "../../components/About";
 import TopArrow from "../../components/TopArrow";
 
 //Importando icones de tecnologias
@@ -83,6 +84,7 @@ const Home = () => {
   return (
     <>
       <Banner id="start" />
+      <About id="about" />
       <GridCarousel id="projects" projects={arrayData} />
       <Habilities id="habilities" />
     </>

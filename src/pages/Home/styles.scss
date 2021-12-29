@@ -1,6 +1,6 @@
 #start {
-  height: 120vh;
-  /* background-color: #000; */
+  width: 100%;
+  height: auto;
 }
 
 #carousel {
@@ -12,6 +12,12 @@
   }
 
   z-index: 2;
+}
+
+#about {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
 }
 
 #skills {
@@ -33,10 +39,6 @@ main {
 }
 
 @media (min-width: 468px) {
-
-  #app {
-    max-width: 1200px;
-  }
 
   footer {
     width: 250px;

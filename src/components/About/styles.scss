@@ -1,0 +1,67 @@
+@import '../Variables/Variables.scss';
+
+#about,
+.row {
+  width: 100%;
+  height: 85vh;
+  padding: 10px;
+}
+
+#about {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #123a00, #1d5900, #40ad00, #51FF00);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  margin: 145px auto;
+  position: relative;
+
+  h3,
+  p {
+    text-shadow: $textShadow;
+  }
+
+  z-index: 2;
+}
+
+#contact {
+  font-size: 1rem;
+  color: $lightColor;
+
+  filter: contrast(200%);
+
+  a {
+    text-decoration: none;
+    color: $lightColor;
+    opacity: .8;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 468px) {
+  #about {
+    .row {
+      p {
+        font-size: 1.3rem;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

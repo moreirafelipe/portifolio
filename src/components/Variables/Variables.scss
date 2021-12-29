@@ -4,6 +4,7 @@ $bgColor: #000;
 
 //FONTES
 $lightColor: #ccc;
+$darkColor: #000;
 $bodyFontFamily: -apple-system,
 BlinkMacSystemFont,
 'Segoe UI',
@@ -23,7 +24,7 @@ Consolas,
 'Courier New',
 monospace;
 
-$textShadow: 2px 2px 2px $shadowColor;
+$textShadow: 2px 2px 3px $shadowColor;
 $boxShadow: 6px 6px 16px -3px $shadowColor;
 
 //IMAGENS

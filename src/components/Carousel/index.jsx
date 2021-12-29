@@ -40,7 +40,7 @@ export function GridCarousel(props) {
 
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
-    <div id="projects" className="d-flex flex-column flex-wrap mx-auto mt-5 pt-4 px-2">
+    <div id="projects" className="d-flex flex-column flex-wrap mx-auto mt-5 p-5 px-2">
       <h3 className='mt-5 mb-0'>Projects</h3>
       <div className="d-none d-md-block">
         <Quote />

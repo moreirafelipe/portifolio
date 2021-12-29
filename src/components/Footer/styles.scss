@@ -2,10 +2,16 @@
 
 #footer {
   width: 100%;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-flow: row wrap;
   margin: 0;
+
+  img {
+    width: 60px;
+    height: fit-content;
+    margin: 5px;
+  }
 
   #medias {
     width: 100%;
@@ -16,34 +22,5 @@
     align-items: center;
     justify-content: space-around;
     align-items: center;
-  }
-}
-
-#icons {
-  height: 20vh;
-
-  svg {
-    width: 40px;
-    height: fit-content;
-    margin: 5px;
-  }
-}
-
-p {
-  margin: 5px;
-}
-
-#contact {
-  font-size: 1rem;
-  color: $lightColor;
-
-  a {
-    text-decoration: none;
-    color: $lightColor;
-    opacity: .7;
-  }
-
-  a:hover {
-    opacity: 1;
   }
 }
