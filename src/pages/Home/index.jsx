@@ -37,7 +37,7 @@ const arrayData = [
     name: 'Amar e Cuidar - Back-End',
     repo: 'https://github.com/CTD-E-Commerce/ctd-ecommerce-back',
     description: 'Back-end layer for the cloud based e-commerce platform Amar e cuidar.',
-    technologies: [<SpringSVG />, <MySqlSVG />, <AwsSVG />]
+    technologies: [<JavaSVG />, <SpringSVG />, <MySqlSVG />, <AwsSVG />]
   },
   {
     id: 3,
