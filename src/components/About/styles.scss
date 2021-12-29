@@ -10,7 +10,7 @@
 #about {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #123a00, #1d5900, #40ad00, #51FF00);
+  background: linear-gradient(-45deg, #123a00, #3aa802, #40ad00, #fbff00);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   margin: 145px auto;
@@ -44,6 +44,10 @@
 @media (min-width: 468px) {
   #about {
     .row {
+      h3 {
+        padding-top: 25px;
+      }
+
       p {
         font-size: 1.3rem;
         width: 80%;
