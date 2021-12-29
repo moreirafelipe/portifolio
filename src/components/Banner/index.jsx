@@ -81,7 +81,7 @@ export function Banner() {
                   .pauseFor(1000)
                   .deleteChars(20)
 
-                  .typeString(`an Engineering student <img className="" src=${enginnerSVG} alt="engineer">`)
+                  .typeString(`an Engineering Student <img className="" src=${enginnerSVG} alt="engineer">`)
                   .pauseFor(1000)
                   .deleteChars(23)
 
