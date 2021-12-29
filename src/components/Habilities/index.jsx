@@ -22,7 +22,7 @@ export function Habilities() {
     <>
       <div id="habilities" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-white bg-black mt-5 p-5">
         <h3 className="w-100 text-center mt-5 pt-5">Hard Skills</h3>
-        <p>There are some skills that I've been working with lately:</p>
+        <p>These are some skills I've been working with lately:</p>
         <div className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2">
           <JavascriptSVG className="skillIcon" />
           <NodeSVG className="skillIcon" />

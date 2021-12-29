@@ -16,8 +16,8 @@ export function About() {
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
     <div id="about" className="d-flex w-100 pt-5 justify-content-around align-items-start text-light">
-      <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-5">
-        <h3 className="display-2 text-center">Nice to meet you!</h3>
+      <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-3">
+        <h3 className="display-3 text-center">Nice to meet you!</h3>
         <div className="col-12 d-flex mt-4 flex-row flex-wrap justify-content-around align-items-start fs-6">
           <p className="col-12 col-md-9">I'm Felipe Moreira, a Systems Analyst who lives in São Paulo, Brazil.
           </p>
