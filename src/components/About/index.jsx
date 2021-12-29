@@ -23,7 +23,7 @@ export function About() {
           </p>
           <p>I'm' experienced in the IT, Telecom and CCTV infrastructure support area, and I'm also capable of developing and maintaining cross-platform applications.</p>
           <p>
-            Since 2009, I've strived my career providing technical support for Proxy and Data Base servers, delivering systems integrations between Marketing and chatbots platforms and, from 2020 until now, I've been studying and developing cloud based applications, mainly using React Js, Java and AWS, in Digital House's Certified Tech Developer training.
+            Since 2009, I've built my career providing technical support for Proxy and Data Base servers, delivering systems integrations between Marketing and chatbots platforms and, from 2020 until now, I've been studying and developing cloud based applications, mainly using React Js, Java and AWS, in Digital House's Certified Tech Developer training.
           </p>
         </div>
         <div className="col-12 text-center">
