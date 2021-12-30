@@ -68,7 +68,7 @@ export function GridCarousel(props) {
       >
         {props.projects.length > 0 && (props.projects.map((project, index) => {
           return (
-            <Item data-aos="fade-up" key={index}>
+            <Item key={index}>
               <div className="card bg-black text-light mx-4">
                 <img src={imgName[index]} className="card-img-top" alt="..." />
                 <div className="card-body mb-5">
