@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { ReactComponent as ReactBootstrapSVG } from '../../assets/icons/react-bootstrap.svg';
 import { ReactComponent as AwsSVG } from '../../assets/icons/aws.svg';
 import { ReactComponent as DockerSVG } from '../../assets/icons/docker.svg';
@@ -15,15 +17,23 @@ import { ReactComponent as MongoDbSVG } from '../../assets/icons/mongodb.svg';
 import { ReactComponent as ReactSVG } from '../../assets/icons/react.svg';
 import felipePNG from '../../assets/icons/flaticon_fm.png';
 
+//Aos lib import
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
 import './styles.scss'
 
 export function Habilities() {
-  return (
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+  return (
     <div id="habilities" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-white bg-black mt-5">
-      <h3 className="w-100 text-center fs-3 mt-5 pt-5">Hard Skills</h3>
-      <p className="fs-5">These are some skills I've been working with lately:</p>
-      <div className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2 ">
+      <h3 data-aos="fade-up" className="w-100 text-center fs-3 mt-5 pt-5">Hard Skills</h3>
+      <p data-aos="fade-up" className="fs-5">These are some skills I've been working with lately:</p>
+      <div data-aos="fade-up" className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2 ">
         <JavascriptSVG className="skillIcon" />
         <NodeSVG className="skillIcon" />
         <ReactSVG className="skillIcon" />

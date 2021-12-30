@@ -5,7 +5,7 @@ import felipePNG from '../../assets/icons/flaticon_fm.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import './styles.scss'
+import './styles.scss';
 
 export default function Footer() {
   return (

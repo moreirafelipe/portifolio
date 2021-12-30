@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Item } from '../Item';
@@ -14,6 +15,10 @@ import acamasys from '../../assets/images/projects/acamasys.png';
 import memoryfighter from '../../assets/images/projects/memoryfighter.png';
 import travelsbook from '../../assets/images/projects/travelsbook.png';
 import calculadora from '../../assets/images/projects/calculadora.png';
+
+//Aos lib import
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 //Function component que exporta o componentcarousel
 export function GridCarousel(props) {
@@ -38,15 +43,19 @@ export function GridCarousel(props) {
 
   const imgName = [amarCuidarFront, amarCuidarBack, odontoclinic, acamasys, memoryfighter, travelsbook, calculadora];
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
-    <div id="projects" className="d-flex flex-column flex-wrap mx-auto p-5 px-2">
+    <div id="projects" data-aos="zoom-out-up" className="d-flex flex-column flex-wrap mx-auto p-5 px-2">
       <h3 className='mt-2 pt-5 fs-3 mb-0'>Projects</h3>
       <div className="d-none d-md-block">
         <Quote />
       </div>
 
-      <Carousel className="carousel d-flex  m-auto w-100"
+      <Carousel className="carousel d-flex m-auto w-100"
         showDots={true}
         responsive={responsive}
         infinite={true}
@@ -59,7 +68,7 @@ export function GridCarousel(props) {
       >
         {props.projects.length > 0 && (props.projects.map((project, index) => {
           return (
-            <Item key={index}>
+            <Item data-aos="fade-up" key={index}>
               <div className="card bg-black text-light mx-4">
                 <img src={imgName[index]} className="card-img-top" alt="..." />
                 <div className="card-body mb-5">
