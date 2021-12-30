@@ -81,7 +81,7 @@ export function Banner() {
                   .pauseFor(1000)
                   .deleteChars(20)
 
-                  .typeString(`an Engineering Student <img className="" src=${enginnerSVG} alt="engineer">`)
+                  .typeString(`an Engineering student <img className="" src=${enginnerSVG} alt="engineer">`)
                   .pauseFor(1000)
                   .deleteChars(23)
 
@@ -90,7 +90,7 @@ export function Banner() {
                   .typeString(`<img src=${languageSVG} alt="developer">`)
                   .typeString(`<img src=${enginnerSVG} alt="developer">`)
 
-                  .typeString(`<br><br>Check my work bellow <a href="#projects"><img src=${downArrowSVG}></a>`)
+                  .typeString(`<br><br>Check my projects <a href="#projects"><img src=${downArrowSVG}></a>`)
                   .start();
               }}
             />

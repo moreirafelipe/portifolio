@@ -1,24 +1,39 @@
-.container-icons {
+#habilities {
   width: 100%;
-  height: auto;
+  /* min-height: 90h; */
+  height: fit-content;
+  min-height: 85vh;
+  padding: 0 5%;
 }
 
 .skillIcon {
-  width: 50px;
+  width: 10%;
   height: auto;
-  margin: 10px;
+  margin: 7%;
 }
 
 @media (min-width: 605px) {
   .skillIcon {
     width: 70px;
-    margin: 30px;
+    margin: 7%;
     height: auto;
   }
 
   .container-icons {
-    width: 60%;
-    height: 50vh;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 968px) {
+  .skillIcon {
+    width: 70px;
+    margin: 5% 4%;
+    height: auto;
+  }
+
+  .container-icons {
+    width: 50%;
     margin: 0 auto;
   }
 }

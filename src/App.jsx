@@ -13,7 +13,7 @@ function App() {
         <Header id="header" />
         <RouteList />
         <TopArrow />
-        {/*         <Footer id="about" /> */}
+        <Footer id="footer" />
       </Router >
     </div>
   );

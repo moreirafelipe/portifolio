@@ -19,36 +19,27 @@ import './styles.scss'
 
 export function Habilities() {
   return (
-    <>
-      <div id="habilities" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-white bg-black mt-5 p-5">
-        <h3 className="w-100 text-center mt-5 pt-5">Hard Skills</h3>
-        <p>These are some skills I've been working with lately:</p>
-        <div className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2">
-          <JavascriptSVG className="skillIcon" />
-          <NodeSVG className="skillIcon" />
-          <ReactSVG className="skillIcon" />
-          <ReactBootstrapSVG className="skillIcon" />
-          <SassSVG className="skillIcon" />
-          <JavaSVG className="skillIcon" />
-          <SpringSVG className="skillIcon" />
-          <PythonSVG className="skillIcon" />
-          <DjangoSVG className="skillIcon bg-light px-2" />
-          <SqlServerSVG className="skillIcon" />
-          <MySqlSVG className="skillIcon" />
-          <MongoDbSVG className="skillIcon" />
-          <DockerSVG className="skillIcon" />
-          <JenkinsSVG className="skillIcon" />
-          <AwsSVG className="skillIcon" />
-        </div>
+
+    <div id="habilities" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-white bg-black mt-5">
+      <h3 className="w-100 text-center mt-5 pt-3">Hard Skills</h3>
+      <p>These are some skills I've been working with lately:</p>
+      <div className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2 ">
+        <JavascriptSVG className="skillIcon" />
+        <NodeSVG className="skillIcon" />
+        <ReactSVG className="skillIcon" />
+        <ReactBootstrapSVG className="skillIcon" />
+        <SassSVG className="skillIcon" />
+        <JavaSVG className="skillIcon" />
+        <SpringSVG className="skillIcon" />
+        <PythonSVG className="skillIcon" />
+        <DjangoSVG className="skillIcon bg-light px-2" />
+        <SqlServerSVG className="skillIcon" />
+        <MySqlSVG className="skillIcon" />
+        <MongoDbSVG className="skillIcon" />
+        <DockerSVG className="skillIcon" />
+        <JenkinsSVG className="skillIcon" />
+        <AwsSVG className="skillIcon" />
       </div>
-      <section id="footer" className="bg-black text-light text-center">
-        <div id="medias" >
-          <div id="description" className="d-flex flex-column align-items-center justify-content-center m-auto">
-            <img src={felipePNG} alt="logo" />
-            <p>&#169; 2021</p>
-          </div>
-        </div>
-      </section>
-    </>
+    </div>
   )
 }

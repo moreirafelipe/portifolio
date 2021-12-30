@@ -9,9 +9,9 @@ import './styles.scss'
 
 export default function Footer() {
   return (
-    <section id="footer" className="bg-black text-light text-center pt-4">
+    <section id="footer" className="bg-black text-light text-center pt-3">
       <div id="medias">
-        <div id="description" className="d-flex flex-column align-items-center justify-content-center m-auto my-4">
+        <div id="description" className="d-flex flex-column align-items-center justify-content-center m-auto my-2">
           <img src={felipePNG} alt="logo" />
           <p>&#169; 2021</p>
         </div>
