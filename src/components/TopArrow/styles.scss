@@ -3,14 +3,13 @@
 }
 
 #back-buttom {
-
   .row-up-arrow {
     background-color: #000;
     margin: 0 auto;
     width: 47px;
     height: 47px;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 7px;
     margin: 0px 0 0 -30px;
     z-index: 100;
@@ -99,6 +98,23 @@
 
     100% {
       opacity: 0;
+    }
+  }
+}
+
+@media (min-width: 460px) {
+  #back-buttom {
+    .row-up-arrow {
+      width: 55px;
+      height: 55px;
+      right: 15px;
+      bottom: 30px;
+
+      .col-up-arrow {
+        .ca3-scroll-up-link {
+          bottom: 4px;
+        }
+      }
     }
   }
 }
