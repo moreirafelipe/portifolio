@@ -17,7 +17,7 @@ export function About() {
   return (
     <div id="about" className="d-flex w-100 pt-5 justify-content-around align-items-start text-light">
       <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-2 pt-5">
-        <h3 className="display-3  text-center">Nice to meet you!</h3>
+        <h3 className="display-5  text-center">Nice to meet you!</h3>
         <div className="col-12 d-flex mt-1 flex-row flex-wrap justify-content-around align-items-start fs-6">
           <p className="col-12 col-md-9 mt-2">I'm Felipe Moreira, a Systems Analyst who lives in São Paulo, Brazil.
           </p>
