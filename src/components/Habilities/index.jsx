@@ -26,7 +26,7 @@ import './styles.scss'
 export function Habilities() {
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1500 });
   }, []);
 
   return (
@@ -34,21 +34,21 @@ export function Habilities() {
       <h3 data-aos="fade-up" className="w-100 text-center fs-3 mt-5 pt-5">Hard Skills</h3>
       <p data-aos="fade-up" className="fs-5">These are some skills I've been working with lately:</p>
       <div data-aos="fade-up" className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2 ">
-        <JavascriptSVG className="skillIcon" />
-        <NodeSVG className="skillIcon" />
-        <ReactSVG className="skillIcon" />
-        <ReactBootstrapSVG className="skillIcon" />
-        <SassSVG className="skillIcon" />
-        <JavaSVG className="skillIcon" />
-        <SpringSVG className="skillIcon" />
-        <PythonSVG className="skillIcon" />
-        <DjangoSVG className="skillIcon bg-light px-2" />
-        <SqlServerSVG className="skillIcon" />
-        <MySqlSVG className="skillIcon" />
-        <MongoDbSVG className="skillIcon" />
-        <DockerSVG className="skillIcon" />
-        <JenkinsSVG className="skillIcon" />
-        <AwsSVG className="skillIcon" />
+        <JavascriptSVG data-aos="fade-up" className="skillIcon" />
+        <NodeSVG data-aos="fade-up" className="skillIcon" />
+        <ReactSVG data-aos="fade-up" className="skillIcon" />
+        <ReactBootstrapSVG data-aos="fade-up" className="skillIcon" />
+        <SassSVG data-aos="fade-up" className="skillIcon" />
+        <JavaSVG data-aos="fade-up" className="skillIcon" />
+        <SpringSVG data-aos="fade-up" className="skillIcon" />
+        <PythonSVG data-aos="fade-up" className="skillIcon" />
+        <DjangoSVG data-aos="fade-up" className="skillIcon bg-light px-2" />
+        <SqlServerSVG data-aos="fade-up" className="skillIcon" />
+        <MySqlSVG data-aos="fade-up" className="skillIcon" />
+        <MongoDbSVG data-aos="fade-up" className="skillIcon" />
+        <DockerSVG data-aos="fade-up" className="skillIcon" />
+        <JenkinsSVG data-aos="fade-up" className="skillIcon" />
+        <AwsSVG data-aos="fade-up" className="skillIcon" />
       </div>
     </div>
   )

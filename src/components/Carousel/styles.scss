@@ -11,6 +11,12 @@
   flex-flow: row wrap;
   z-index: 2;
 
+  .card-buttons {
+    a {
+      width: 100%;
+    }
+  }
+
   //Estilos gerais do elemento
   @include carouselStyles(95vw, auto, none, $textShadow);
 

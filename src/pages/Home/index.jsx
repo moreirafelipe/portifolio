@@ -48,7 +48,7 @@ const arrayData = [
   },
   {
     id: 4,
-    name: 'ACMASYS - Academic Managment System',
+    name: 'ACMASYS',
     repo: 'https://github.com/moreirafelipe/dh-poo-checkpoint1',
     description: 'Academic management system which organizes classes.',
     technologies: [<JavaSVG />]
