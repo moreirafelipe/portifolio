@@ -16,9 +16,11 @@
   margin: 145px auto;
   position: relative;
 
-  h3,
-  p {
+  p,
+  h2,
+  h3 {
     text-shadow: $textShadow;
+    margin: 1% 0;
   }
 
   z-index: 2;
@@ -54,6 +56,7 @@
 
       p {
         font-size: 1.3rem;
+        margin: 1% 0;
         width: 80%;
       }
     }

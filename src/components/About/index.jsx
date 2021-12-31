@@ -29,20 +29,20 @@ export function About() {
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
     <div id="about" className="d-flex w-100 mt-5 pt-5 justify-content-around align-items-start text-light">
-      <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-2 pt-5">
+      <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-4 pt-4">
         <h3 data-aos="fade-up" className="display-5  text-center">Nice to meet you!</h3>
         <div data-aos="fade-up" className="col-12 d-flex mt-1 flex-row flex-wrap justify-content-around align-items-start fs-6">
-          <p data-aos="fade-up" className="col-12 col-md-9 mt-2">My name is Felipe Moreira. I'm a Systems Analyst who lives in São Paulo, Brazil.
+          <p data-aos="fade-up" className="col-12 col-md-9 ">My name is Felipe Moreira. I'm a Systems Analyst who lives in São Paulo, Brazil.
           </p>
           <p data-aos="fade-up">
-            Since 2009, I've been building my career as IT Analyst, providing technical support for IT, CCTV and Telecom infrastructure and delivering systems integrations between Marketing and chatbots platforms.
+            Since 2009, I've been building my career as IT Analyst, providing technical support for IT, CCTV and Telecom infrastructure, and delivering integrations between Marketing and chatbots platforms.
           </p>
           <p data-aos="fade-up">
-            From 2020 until now, I've been developing cloud based applications, mainly using React Js, Java and AWS, in Digital House's Certified Tech Developer training.
+            From 2020 until now, I've been developing cloud based applications using React Js, Java and AWS, in Digital House's Certified Tech Developer training.
           </p>
           <p data-aos="fade-up">Tracing this road, I'm looking for my first opportunity as a Jr. Software Engineer.</p>
         </div>
-        <div data-aos="fade-up" className="col-12 text-center mt-2">
+        <div data-aos="fade-up" className="col-12 about-contact text-center mt-2">
           <h2>So, let's stay in touch!</h2>
           <div id="contact" className="d-flex flex-row justify-content-center align-items-center mt-1 m-auto">
             <a href="https://www.linkedin.com/in/felipen20/" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} className="mx-2 h1" /></a>
