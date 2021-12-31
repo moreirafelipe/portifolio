@@ -37,10 +37,10 @@ export function About() {
           <p data-aos="fade-up">
             Since 2009, I've been building my career as IT Analyst, providing technical support for IT, CCTV and Telecom infrastructure and delivering systems integrations between Marketing and chatbots platforms.
           </p>
-          <p>
+          <p data-aos="fade-up">
             From 2020 until now, I've been developing cloud based applications, mainly using React Js, Java and AWS, in Digital House's Certified Tech Developer training.
           </p>
-          <p>Tracing this road, I'm looking for my first opportunity as a Jr. Software Engineer.</p>
+          <p data-aos="fade-up">Tracing this road, I'm looking for my first opportunity as a Jr. Software Engineer.</p>
         </div>
         <div data-aos="fade-up" className="col-12 text-center mt-2">
           <h2>So, let's stay in touch!</h2>
