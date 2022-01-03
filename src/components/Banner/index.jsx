@@ -48,7 +48,7 @@ export function Banner() {
         <div className="grid__item pos-3"><div className="grid__item-img" style={{ backgroundImage: `url(${odontoclinic})` }}></div></div>
         <div className="grid__item pos-4"><div className="grid__item-img" style={{ backgroundImage: `url(${amarFront})` }}></div></div>
         <div className="grid__item pos-5"><div className="grid__item-img" style={{ backgroundImage: `url(${profilePhoto})` }}></div></div>
-        <div className="grid__item pos-6"><div className="grid__item-img" style={{ backgroundImage: `url(${trainiing})` }}></div></div>
+        <div className="grid__item pos-6"><div className="grid__item-img" style={{ backgroundImage: `url(${amarBack})` }}></div></div>
         <div className="grid__item pos-7"><div className="grid__item-img" style={{ backgroundImage: `url(${todolist})` }}></div></div>
         <div className="grid__item pos-8"><div className="grid__item-img" style={{ backgroundImage: `url(${calculadora})` }}></div></div>
         <div className="grid__item pos-9"><div className="grid__item-img" style={{ backgroundImage: `url(${amarBack})` }}></div></div>
