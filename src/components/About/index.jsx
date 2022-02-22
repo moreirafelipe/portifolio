@@ -40,7 +40,7 @@ export function About() {
           <p data-aos="fade-up">
             From 2020 until now, I've been developing cloud based applications using React Js, Java and AWS, in Digital House's Certified Tech Developer training.
           </p>
-          <p data-aos="fade-up">Tracing this road, I'm looking for my first opportunity as a Jr. Software Engineer.</p>
+          <p data-aos="fade-up">Then, in the beginning of 2022, I started as Data Architect providing Data Infrastrucutre support.</p>
         </div>
         <div data-aos="fade-up" className="col-12 about-contact text-center mt-2">
           <h2>So, let's stay in touch!</h2>
