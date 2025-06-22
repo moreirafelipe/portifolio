@@ -16,6 +16,7 @@ const TopArrow = () => {
   };
 
   window.addEventListener('scroll', changeButtomState);
+
   return (
     <Container id={topArrow ? "back-buttom" : "hidden-buttom"} className='container-buttom content'>
       <Row className="row-up-arrow">

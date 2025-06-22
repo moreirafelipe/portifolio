@@ -8,13 +8,15 @@ import Quote from '../Quote';
 import './styles.scss'
 
 //Importando imagens PNG
-import amarCuidarFront from '../../assets/images/projects/amar-e-cuidar-front.png';
-import amarCuidarBack from '../../assets/images/projects/amar-e-cuidar-back.png';
+import amarCuidarFront from '../../assets/images/projects/amar_e_cuidar_front.png';
+import amarCuidarBack from '../../assets/images/projects/amar_e_cuidar_back.png';
 import odontoclinic from '../../assets/images/projects/odontoclinic.png';
-import acamasys from '../../assets/images/projects/acamasys.png';
-import memoryfighter from '../../assets/images/projects/memoryfighter.png';
 import travelsbook from '../../assets/images/projects/travelsbook.png';
-import calculadora from '../../assets/images/projects/calculadora.png';
+import abcInc from '../../assets/images/projects/abc_inc_marketing_analysis.png';
+import cosmeticsNosqlAnalysis from '../../assets/images/projects/cosmetics_nosql_analysis.png';
+import tweeterWebscrapper from '../../assets/images/projects/tweeter_logic_model.png';
+
+
 
 //Aos lib import
 import Aos from "aos";
@@ -41,7 +43,7 @@ export function GridCarousel(props) {
     }
   };
 
-  const imgName = [amarCuidarFront, amarCuidarBack, odontoclinic, acamasys, memoryfighter, travelsbook, calculadora];
+  const imgName = [abcInc, cosmeticsNosqlAnalysis, tweeterWebscrapper, amarCuidarFront, amarCuidarBack, odontoclinic, travelsbook];
 
   useEffect(() => {
     Aos.init({ duration: 1500 });

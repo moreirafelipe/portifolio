@@ -2,20 +2,20 @@ import { useEffect } from 'react';
 
 import { ReactComponent as ReactBootstrapSVG } from '../../assets/icons/react-bootstrap.svg';
 import { ReactComponent as AwsSVG } from '../../assets/icons/aws.svg';
+import { ReactComponent as PandasSVG } from '../../assets/icons/pandas.svg';
 import { ReactComponent as DockerSVG } from '../../assets/icons/docker.svg';
 import { ReactComponent as JenkinsSVG } from '../../assets/icons/jenkins.svg';
 import { ReactComponent as JavaSVG } from '../../assets/icons/java.svg';
 import { ReactComponent as SpringSVG } from '../../assets/icons/spring.svg';
 import { ReactComponent as PythonSVG } from '../../assets/icons/python.svg';
-import { ReactComponent as DjangoSVG } from '../../assets/icons/django.svg';
+import { ReactComponent as FastPISVG } from '../../assets/icons/fastapi.svg';
 import { ReactComponent as JavascriptSVG } from '../../assets/icons/js.svg';
 import { ReactComponent as NodeSVG } from '../../assets/icons/nodejs.svg';
-import { ReactComponent as SassSVG } from '../../assets/icons/sass.svg';
+import { ReactComponent as PostgreSVG } from '../../assets/icons/postgre.svg';
 import { ReactComponent as SqlServerSVG } from '../../assets/icons/sqlserver.svg';
 import { ReactComponent as MySqlSVG } from '../../assets/icons/mysql.svg';
 import { ReactComponent as MongoDbSVG } from '../../assets/icons/mongodb.svg';
-import { ReactComponent as ReactSVG } from '../../assets/icons/react.svg';
-import felipePNG from '../../assets/icons/flaticon_fm.png';
+import { ReactComponent as SparkSVG } from '../../assets/icons/spark.svg';
 
 //Aos lib import
 import Aos from "aos";
@@ -36,19 +36,20 @@ export function Habilities() {
       <div data-aos="fade-up" className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2 ">
         <JavascriptSVG data-aos="fade-up" className="skillIcon" />
         <NodeSVG data-aos="fade-up" className="skillIcon" />
-        <ReactSVG data-aos="fade-up" className="skillIcon" />
+        <PandasSVG data-aos="fade-up" className="skillIcon" />
         <ReactBootstrapSVG data-aos="fade-up" className="skillIcon" />
-        <SassSVG data-aos="fade-up" className="skillIcon" />
+        <PostgreSVG data-aos="fade-up" className="skillIcon" />
         <JavaSVG data-aos="fade-up" className="skillIcon" />
         <SpringSVG data-aos="fade-up" className="skillIcon" />
         <PythonSVG data-aos="fade-up" className="skillIcon" />
-        <DjangoSVG data-aos="fade-up" className="skillIcon bg-light px-2" />
+        <FastPISVG data-aos="fade-up" className="skillIcon" />
         <SqlServerSVG data-aos="fade-up" className="skillIcon" />
         <MySqlSVG data-aos="fade-up" className="skillIcon" />
         <MongoDbSVG data-aos="fade-up" className="skillIcon" />
         <DockerSVG data-aos="fade-up" className="skillIcon" />
         <JenkinsSVG data-aos="fade-up" className="skillIcon" />
         <AwsSVG data-aos="fade-up" className="skillIcon" />
+        <SparkSVG data-aos="fade-up" className="skillIcon" px-5 />
       </div>
     </div>
   )

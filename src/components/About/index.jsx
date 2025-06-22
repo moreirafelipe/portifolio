@@ -32,15 +32,15 @@ export function About() {
       <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-4 pt-4">
         <h3 data-aos="fade-up" className="display-5  text-center">Nice to meet you!</h3>
         <div data-aos="fade-up" className="col-12 d-flex mt-1 flex-row flex-wrap justify-content-around align-items-start fs-6">
-          <p data-aos="fade-up" className="col-12 col-md-9 ">My name is Felipe Moreira. I'm a Systems Analyst who lives in São Paulo, Brazil.
+          <p data-aos="fade-up" className="col-12 col-md-9 ">
+            I'm a Data Engineer over 3 years of experience, capable of developing and maintaining multi-platform data applications, approaching many aspects of its applicability based on the desired context.
           </p>
           <p data-aos="fade-up">
-            Since 2009, I've been building my career as IT Analyst, providing technical support for IT, CCTV and Telecom infrastructure, and delivering integrations between Marketing and chatbots platforms.
+            With demonstrated story in the education, real-state and financial business segments, I'm capable to understand and translate knowledge throughout business needs for stakeholders and development teams.
           </p>
           <p data-aos="fade-up">
-            From 2020 until now, I've been developing cloud based applications using React Js, Java and AWS, in Digital House's Certified Tech Developer training.
+            I have been working as Data Engineer since January 2022 and specializing my studies through the Data Architecture post graduation degree, at PUC Minas university, since 2024.
           </p>
-          <p data-aos="fade-up">Then, in the beginning of 2022, I started as Data Architect providing Data Infrastrucutre support.</p>
         </div>
         <div data-aos="fade-up" className="col-12 about-contact text-center mt-2">
           <h2>So, let's stay in touch!</h2>

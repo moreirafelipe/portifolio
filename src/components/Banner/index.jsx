@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Row, Col } from 'react-bootstrap';
 
 import TypewriterComponent from 'typewriter-effect';
-import TopArrow from '../TopArrow';
 import downArrowSVG from '../../assets/icons/down-buttom.svg'
 
 import Grid from '../Grid/grid';
@@ -12,18 +10,6 @@ import { preloadImages } from '../../utils/utils';
 import webSVG from '../../assets/icons/web.svg';
 import enginnerSVG from '../../assets/icons/engineer.svg';
 import languageSVG from '../../assets/icons/language.svg';
-
-import amarFront from '../../assets/images/projects/amar-e-cuidar-front.png';
-import amarBack from '../../assets/images/projects/amar-e-cuidar-back.png';
-import odontoclinic from '../../assets/images/projects/odontoclinic.png';
-import memoryfighter from '../../assets/images/projects/memoryfighter.png';
-import profilePhoto from '../../assets/images/projects/profile.jpg';
-import travelsbook from '../../assets/images/projects/travelsbook.png';
-import todolist from '../../assets/images/projects/todolist.png';
-import univesp from '../../assets/images/projects/univesp.png';
-import trainiing from '../../assets/images/projects/trainiing.png';
-import calculadora from '../../assets/images/projects/calculadora.png';
-
 import './styles.scss';
 
 export function Banner() {
@@ -43,16 +29,16 @@ export function Banner() {
   return (
     <div id="start" className='container-banner content'>
       <div className="grid">
-        <div className="grid__item pos-1"><div className="grid__item-img" style={{ backgroundImage: `url(${travelsbook})` }}></div></div>
-        <div className="grid__item pos-2"><div className="grid__item-img" style={{ backgroundImage: `url(${univesp})` }}></div></div>
-        <div className="grid__item pos-3"><div className="grid__item-img" style={{ backgroundImage: `url(${odontoclinic})` }}></div></div>
-        <div className="grid__item pos-4"><div className="grid__item-img" style={{ backgroundImage: `url(${amarFront})` }}></div></div>
-        <div className="grid__item pos-5"><div className="grid__item-img" style={{ backgroundImage: `url(${profilePhoto})` }}></div></div>
-        <div className="grid__item pos-6"><div className="grid__item-img" style={{ backgroundImage: `url(${amarBack})` }}></div></div>
-        <div className="grid__item pos-7"><div className="grid__item-img" style={{ backgroundImage: `url(${todolist})` }}></div></div>
-        <div className="grid__item pos-8"><div className="grid__item-img" style={{ backgroundImage: `url(${calculadora})` }}></div></div>
-        <div className="grid__item pos-9"><div className="grid__item-img" style={{ backgroundImage: `url(${amarBack})` }}></div></div>
-        <div className="grid__item pos-10"><div className="grid__item-img" style={{ backgroundImage: `url(${memoryfighter})` }}></div></div>
+        <div className="grid__item pos-1"><div className="grid-item-words" >About</div></div>
+        <div className="grid__item pos-2"><div className="grid-item-words" >Projects</div></div>
+        <div className="grid__item pos-3"><div className="grid-item-words"></div>Hard skills</div>
+        <div className="grid__item pos-4"><div className="grid-item-words">Data</div></div>
+        <div className="grid__item pos-5"><div className="grid-item-words">AI</div></div>
+        <div className="grid__item pos-6"><div className="grid-item-img">Cloud</div></div>
+        <div className="grid__item pos-7"><div className="grid-item-words">DataOps</div></div>
+        <div className="grid__item pos-8"><div className="grid-item-words">Data Quality</div></div>
+        <div className="grid__item pos-9"><div className="grid-item-words">Big Data</div></div>
+        <div className="grid__item pos-10"><div className="grid-item-words">Architecture</div></div>
       </div>
 
       <Row className="d-flex justify-content-between align-items-center mt-5 pt-5 w-100 text-center content__title no-select">
@@ -73,24 +59,24 @@ export function Banner() {
                   .changeDeleteSpeed(.5)
 
                   .typeString("<br>I'm ")
-                  .typeString(`a Full-stack developer <img src=${webSVG} alt="developer">`)
+                  .typeString(`a Data Engineer <img src=${webSVG} alt="developer">`)
                   .pauseFor(1000)
-                  .deleteChars(23)
+                  .deleteChars(16)
 
-                  .typeString(`a Languages student <img src=${languageSVG} alt="languages">`)
+                  .typeString(`a Certified English speaker <img src=${languageSVG} alt="languages">`)
                   .pauseFor(1000)
-                  .deleteChars(20)
+                  .deleteChars(28)
 
-                  .typeString(`an Engineering student <img className="" src=${enginnerSVG} alt="engineer">`)
+                  .typeString(`a Data Architecture student <img className="" src=${enginnerSVG} alt="engineer">`)
                   .pauseFor(1000)
-                  .deleteChars(23)
+                  .deleteChars(28)
 
-                  .typeString("a Software Engineer!")
+                  .typeString("a Platform Engineer!")
                   .typeString(`<br><img src=${webSVG} alt="developer">`)
                   .typeString(`<img src=${languageSVG} alt="developer">`)
                   .typeString(`<img src=${enginnerSVG} alt="developer">`)
 
-                  .typeString(`<br><br>Check my projects <a href="#projects"><img src=${downArrowSVG}></a>`)
+                  .typeString(`<br><br>Check out my projects <a href="#projects"><img src=${downArrowSVG}></a>`)
                   .start();
               }}
             />

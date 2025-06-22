@@ -1,7 +1,7 @@
 @import '../Variables/Variables.scss';
 
 .demo-1 {
-  --color-text: #832f05;
+  --color-text: #01030d;
   --color-bg: #000;
   --color-link: #ffffff;
   --color-link-hover: #000;
@@ -181,7 +181,6 @@ a:focus {
   opacity: 0.4;
   background: var(--color-link);
   animation: loaderAnim .7s linear infinite alternate forwards;
-
 }
 
 .message {
@@ -238,10 +237,10 @@ a:focus {
 .grid {
   pointer-events: none;
   position: absolute;
-  width: 90%;
+  width: 80%;
   height: 100vh;
   top: 10%;
-  left: 5%;
+  left: 10%;
   display: grid;
   grid-template-columns: repeat(50, 2%);
   grid-template-rows: repeat(50, 2%);
@@ -250,6 +249,8 @@ a:focus {
 
 .grid__item {
   position: relative;
+  width: 75%;
+  height: 75%;
 }
 
 .grid--img .grid__item {
@@ -269,11 +270,37 @@ a:focus {
 }
 
 .grid--img .grid__item-img {
-  flex: none;
-  width: calc(100% + 100px);
-  height: calc(100% + 100px);
+  width: calc(150% + 100px);
+  height: calc(150% + 100px);
   will-change: transform;
 }
+
+.grid-item-words {
+  position: relative;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+/* 
+.grid-item-words {
+  position: relative;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 25px;
+  width: 150%;
+  height: 100%;
+  border: blue  solid;
+  border-radius: 100% 100% 100% 100%;
+} */
+
+/* .grid-item-words:hover:before,
+.grid-item-words:hover:before:after {
+  color: rgb(0, 39, 181, 0.7);
+  z-index: 5;
+} */
 
 /* Shorthand grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 
@@ -282,11 +309,11 @@ a:focus {
 }
 
 .pos-2 {
-  grid-area: 1 / 18 / 9 / 27;
+  grid-area: 1 / 18 / 24 / 27;
 }
 
 .pos-3 {
-  grid-area: 1 / 36 / 14 / 42;
+  grid-area: 1 / 36 / 16 / 42;
 }
 
 .pos-4 {
@@ -306,15 +333,15 @@ a:focus {
 }
 
 .pos-8 {
-  grid-area: 38 / 16 / 46 / 22;
+  grid-area: 30 / 16 / 46 / 22;
 }
 
 .pos-9 {
-  grid-area: 40 / 26 / 51 / 32;
+  grid-area: 35 / 26 / 51 / 32;
 }
 
 .pos-10 {
-  grid-area: 37 / 39 / 48 / 47;
+  grid-area: 37 / 39 / 48 / 43;
 }
 
 .content__title {
@@ -327,8 +354,8 @@ a:focus {
   z-index: 2;
   position: relative;
 
-
   span {
+    font-size: 30px;
     background-color: #000;
     color: #fff;
   }
@@ -408,6 +435,10 @@ a:focus {
     justify-content: center;
     max-height: none;
   }
+
+   .grid-item-words {
+      font-size: 25px;
+  }
 }
 
 @keyframes loaderAnim {
@@ -433,7 +464,6 @@ a:focus {
   }
 }
 
-
 @media (min-width: 468px) {
   .container-banner {
     object-fit: contain;
@@ -445,11 +475,7 @@ a:focus {
     }
   }
 
-  .grid__item-img {
-    position: relative;
-    width: 150%;
-    height: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
+  .grid-item-words {
+      font-size: 35px;
   }
 }
