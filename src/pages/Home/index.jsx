@@ -1,6 +1,6 @@
 import { Banner } from "../../components/Banner";
 import { GridCarousel } from "../../components/Carousel";
-import { Habilities } from "../../components/Habilities";
+import { Skills } from "../../components/Skills";
 import { About } from "../../components/About";
 import TopArrow from "../../components/TopArrow";
 
@@ -16,7 +16,7 @@ import { ReactComponent as NodeSVG } from '../../assets/icons/nodejs.svg';
 import { ReactComponent as SassSVG } from '../../assets/icons/sass.svg';
 import { ReactComponent as MySqlSVG } from '../../assets/icons/mysql.svg';
 import { ReactComponent as ReactSVG } from '../../assets/icons/react.svg';
-import { ReactComponent as PostgresSVG } from '../../assets/icons/postgre.svg';
+import { ReactComponent as PostgresSVG } from '../../assets/icons/postgres.svg';
 import { ReactComponent as OracleSVG } from '../../assets/icons/oracle.svg';
 import { ReactComponent as CassandraSVG } from '../../assets/icons/cassandra.svg';
 import { ReactComponent as JupyterSVG } from '../../assets/icons/jupyter.svg';
@@ -88,7 +88,7 @@ const Home = () => {
       <Banner id="start" />
       <About id="about" />
       <GridCarousel id="projects" projects={arrayData} />
-      <Habilities id="habilities" />
+      <Skills id="skills" />
     </>
   );
 }

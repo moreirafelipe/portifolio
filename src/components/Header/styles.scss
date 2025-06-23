@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 @import '../Variables/Variables.scss';
 
-.navbar {
+#navbar {
   width: 100%;
   height: auto;
   padding-top: 25px;
   position: fixed;
   z-index: 100;
-  top: 0;
-  left: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 
@@ -30,12 +28,34 @@
 
   @media (max-width: 991px) {
 
+    #start-mobile {
+      display: fixed;
+      }
+
+    #start-desktop {
+        display: none;
+    }
+
     .menu-list {
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
       align-items: flex-end;
     }
+  }
+
+  @media (min-width: 992px) {
+      #start-mobile {
+        display: none;
+      }
+
+      #start-desktop {
+        display: fixed;
+      }
+
+      div {
+        margin: auto;
+      }
   }
 
   .menu-item {
@@ -161,3 +181,4 @@
 .navbar.colorChange {
   background-color: #000;
 }
+

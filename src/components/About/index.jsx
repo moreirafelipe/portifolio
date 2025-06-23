@@ -1,13 +1,5 @@
 import { useEffect } from "react";
-
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-import { Container, Row, Col } from 'react-bootstrap';
-
-import { Item } from '../Item';
-import Quote from '../Quote';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';

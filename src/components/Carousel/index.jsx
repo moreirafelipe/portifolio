@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { Item } from '../Item';
 import Quote from '../Quote';
 
 //Importando estilos
 import './styles.scss'
+import "react-multi-carousel/lib/styles.css";
 
 //Importando imagens PNG
 import amarCuidarFront from '../../assets/images/projects/amar_e_cuidar_front.png';
@@ -52,7 +52,7 @@ export function GridCarousel(props) {
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
     <div data-aos="fade-in" id="projects" className="d-flex flex-column flex-wrap mx-auto p-5 px-2">
-      <h3 data-aos="fade-up" className='mt-2 pt-5 fs-3 mb-0'>Projects</h3>
+      <h3 data-aos="fade-up" className='mt-2 pt-5 fs-3 mb-0'></h3>
       <div data-aos="fade-up" className="d-none d-md-block">
         <Quote />
       </div>

@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 
 import { ReactComponent as ReactBootstrapSVG } from '../../assets/icons/react-bootstrap.svg';
 import { ReactComponent as AwsSVG } from '../../assets/icons/aws.svg';
+import { ReactComponent as AzureSVG } from '../../assets/icons/azure.svg';
+import { ReactComponent as GcpSVG } from '../../assets/icons/gcp.svg';
 import { ReactComponent as PandasSVG } from '../../assets/icons/pandas.svg';
 import { ReactComponent as DockerSVG } from '../../assets/icons/docker.svg';
 import { ReactComponent as JenkinsSVG } from '../../assets/icons/jenkins.svg';
@@ -11,11 +13,13 @@ import { ReactComponent as PythonSVG } from '../../assets/icons/python.svg';
 import { ReactComponent as FastPISVG } from '../../assets/icons/fastapi.svg';
 import { ReactComponent as JavascriptSVG } from '../../assets/icons/js.svg';
 import { ReactComponent as NodeSVG } from '../../assets/icons/nodejs.svg';
-import { ReactComponent as PostgreSVG } from '../../assets/icons/postgre.svg';
+import { ReactComponent as PostgreSVG } from '../../assets/icons/postgres.svg';
 import { ReactComponent as SqlServerSVG } from '../../assets/icons/sqlserver.svg';
 import { ReactComponent as MySqlSVG } from '../../assets/icons/mysql.svg';
 import { ReactComponent as MongoDbSVG } from '../../assets/icons/mongodb.svg';
 import { ReactComponent as SparkSVG } from '../../assets/icons/spark.svg';
+import { ReactComponent as TerraformSVG } from '../../assets/icons/terraform.svg';
+import { ReactComponent as KubernetesSVG } from '../../assets/icons/kubernetes.svg';
 
 //Aos lib import
 import Aos from "aos";
@@ -23,20 +27,20 @@ import 'aos/dist/aos.css';
 
 import './styles.scss'
 
-export function Habilities() {
+export function Skills() {
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
   return (
-    <div id="habilities" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-white bg-black mt-5">
-      <h3 data-aos="fade-up" className="w-100 text-center fs-3 mt-5 pt-5">Hard Skills</h3>
+    <div id="skills" className="d-flex flex-column flex-wrap justify-content-center text-center align-content-center text-white bg-black mt-5">
+      <h3 data-aos="fade-up" className="w-100 text-center fs-3 mt-5 pt-5"></h3>
       <p data-aos="fade-up" className="fs-5">These are some skills I've been working with lately:</p>
       <div data-aos="fade-up" className="container-icons d-flex flex-wrap flex-row justify-content-around align-items-center pt-2 ">
         <JavascriptSVG data-aos="fade-up" className="skillIcon" />
         <NodeSVG data-aos="fade-up" className="skillIcon" />
-        <PandasSVG data-aos="fade-up" className="skillIcon" />
+        <PandasSVG data-aos="fade-up" className="skillIcon bg-white" />
         <ReactBootstrapSVG data-aos="fade-up" className="skillIcon" />
         <PostgreSVG data-aos="fade-up" className="skillIcon" />
         <JavaSVG data-aos="fade-up" className="skillIcon" />
@@ -49,7 +53,11 @@ export function Habilities() {
         <DockerSVG data-aos="fade-up" className="skillIcon" />
         <JenkinsSVG data-aos="fade-up" className="skillIcon" />
         <AwsSVG data-aos="fade-up" className="skillIcon" />
+        <AzureSVG data-aos="fade-up" className="skillIcon" />
+        <GcpSVG data-aos="fade-up" className="skillIcon" />
         <SparkSVG data-aos="fade-up" className="skillIcon" px-5 />
+        <TerraformSVG data-aos="fade-up" className="skillIcon" px-5 />
+        <KubernetesSVG data-aos="fade-up" className="skillIcon" px-5 />
       </div>
     </div>
   )
