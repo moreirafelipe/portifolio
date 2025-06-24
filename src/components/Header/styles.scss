@@ -3,9 +3,9 @@
 
 #navbar {
   width: 100%;
+  position: fixed;
   height: auto;
   padding-top: 25px;
-  position: fixed;
   z-index: 100;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;

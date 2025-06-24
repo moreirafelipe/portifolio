@@ -249,6 +249,7 @@ a:focus {
 
 .grid__item {
   position: relative;
+  font-size: 1.25rem;
   width: 75%;
   height: 75%;
 }
@@ -282,25 +283,6 @@ a:focus {
   vertical-align: middle;
   font-size: 15px;
 }
-
-/* 
-.grid-item-words {
-  position: relative;
-  align-content: center;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 25px;
-  width: 150%;
-  height: 100%;
-  border: blue  solid;
-  border-radius: 100% 100% 100% 100%;
-} */
-
-/* .grid-item-words:hover:before,
-.grid-item-words:hover:before:after {
-  color: rgb(0, 39, 181, 0.7);
-  z-index: 5;
-} */
 
 /* Shorthand grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 
@@ -476,6 +458,6 @@ a:focus {
   }
 
   .grid-item-words {
-      font-size: 35px;
+      font-size: 2rem;
   }
 }

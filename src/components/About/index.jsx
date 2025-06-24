@@ -1,15 +1,16 @@
 import { useEffect } from "react";
-import "react-multi-carousel/lib/styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 //Aos lib import
 import Aos from "aos";
-import 'aos/dist/aos.css';
 
 //Importando estilos
+import 'aos/dist/aos.css';
 import './styles.scss'
+import "react-multi-carousel/lib/styles.css";
 
 //Function component que exporta o componentcarousel
 export function About() {
@@ -35,11 +36,12 @@ export function About() {
           </p>
         </div>
         <div data-aos="fade-up" className="col-12 about-contact text-center mt-2">
-          <h2>So, let's stay in touch!</h2>
+          <h2>Let's stay in touch!</h2>
           <div id="contact" className="d-flex flex-row justify-content-center align-items-center mt-1 m-auto">
-            <a href="https://www.linkedin.com/in/felipen20/" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} className="mx-2 h1" /></a>
-            <a href="mailto:felipe.saint@gmail.com" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faEnvelope} className="mx-2 h1" /></a>
+            <a href="https://docs.google.com/document/d/1XXEA1HKDEHNQEYDNUNEOcsXkBMLtUErD70mV55vaz7Q/edit?usp=sharing" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faFile} className="mx-2 h1" /></a>
+            <a href="https://www.linkedin.com/in/felipemoreiran24/" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} className="mx-2 h1" /></a>
             <a href="https://github.com/moreirafelipe" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faGithub} className="mx-2 h1" /></a>
+            <a href="mailto:felipe.saint@gmail.com" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faEnvelope} className="mx-2 h1" /></a>
           </div>
         </div>
       </div>
