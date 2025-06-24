@@ -41,10 +41,10 @@ const arrayData = [
   },
   {
     id: 3,
-    name: 'Tweeter relational webscrapper',
-    host: '',
-    repo: 'https://github.com/moreirafelipe/abc-data-analisys',
-    description: 'Data analysis for a marketing forecast source sample.',
+    name: 'Tweeter webscrapper - relational logic model',
+    host: 'https://github.com/moreirafelipe/dsa-sql-projeto1/blob/main/modelos%20de%20dados/ModeloFisico.sql',
+    repo: 'https://github.com/moreirafelipe/dsa-sql-projeto1',
+    description: 'Relational logic model for the tweeter webscrapper.',
     technologies: [<OracleSVG />]
   },
   {
