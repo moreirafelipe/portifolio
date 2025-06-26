@@ -2,9 +2,9 @@
 @import '../Variables/Variables.scss';
 
 #navbar {
-  width: 100%;
-  position: fixed;
+  width: 100vw;
   height: auto;
+  position: fixed;
   padding-top: 25px;
   z-index: 100;
   -webkit-transition: all 0.3s;

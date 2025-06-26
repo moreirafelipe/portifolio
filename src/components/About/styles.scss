@@ -17,10 +17,9 @@
   position: relative;
 
   p,
-  h2,
   h3 {
     text-shadow: $textShadow;
-    margin: 1% 0;
+    text-align: center;
   }
 
   z-index: 2;
@@ -47,11 +46,7 @@
   #about {
     .row {
       h3 {
-        padding-top: 25px;
-      }
-
-      h3 {
-        width: 80%;
+        padding: 25px 0;
       }
 
       p {

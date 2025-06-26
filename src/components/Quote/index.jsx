@@ -1,6 +1,6 @@
 export default function Quote() {
   return (
-    <figure data-aos="fade-up" className="w-100 text-center">
+    <figure data-aos="fade-up" className="w-100 mt-5 text-center">
       <blockquote className="blockquote">
         <p>Achieving goals is about investing time in improving yourself!</p>
       </blockquote>

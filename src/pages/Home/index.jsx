@@ -2,6 +2,7 @@ import { Banner } from "../../components/Banner";
 import { GridCarousel } from "../../components/Carousel";
 import { Skills } from "../../components/Skills";
 import { About } from "../../components/About";
+import { GitHubSkillStats } from "../../components/Chart";
 
 //Importando icones de tecnologias
 import { ReactComponent as ReactBootstrapSVG } from '../../assets/icons/react-bootstrap.svg';
@@ -86,6 +87,7 @@ const Home = () => {
       <Banner id="start" />
       <About id="about" />
       <GridCarousel id="projects" projects={arrayData} />
+      <GitHubSkillStats id="stats" username="moreirafelipe" token="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" />
       <Skills id="skills" />
     </>
   );

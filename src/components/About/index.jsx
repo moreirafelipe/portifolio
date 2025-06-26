@@ -8,8 +8,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Aos from "aos";
 
 //Importando estilos
+import './styles.scss';
 import 'aos/dist/aos.css';
-import './styles.scss'
 import "react-multi-carousel/lib/styles.css";
 
 //Function component que exporta o componentcarousel
@@ -23,7 +23,7 @@ export function About() {
   return (
     <div id="about" className="d-flex w-100 mt-5 pt-5 justify-content-around align-items-start text-light">
       <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-4 pt-4">
-        <h3 data-aos="fade-up" className="display-5  text-center">Nice to meet you!</h3>
+        <h3 data-aos="fade-up" className="text-center">Nice to meet you!</h3>
         <div data-aos="fade-up" className="col-12 d-flex mt-1 flex-row flex-wrap justify-content-around align-items-start fs-6">
           <p data-aos="fade-up" className="col-12 col-md-9 ">
             I'm a Data Engineer over 3 years of experience, capable of developing and maintaining multi-platform data applications, approaching many aspects of its applicability based on the desired context.
@@ -36,7 +36,7 @@ export function About() {
           </p>
         </div>
         <div data-aos="fade-up" className="col-12 about-contact text-center mt-2">
-          <h2>Let's stay in touch!</h2>
+          <h3>Let's stay in touch!</h3>
           <div id="contact" className="d-flex flex-row justify-content-center align-items-center mt-1 m-auto">
             <a href="https://docs.google.com/document/d/1XXEA1HKDEHNQEYDNUNEOcsXkBMLtUErD70mV55vaz7Q/edit?usp=sharing" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faFile} className="mx-2 h1" /></a>
             <a href="https://www.linkedin.com/in/felipemoreiran24/" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} className="mx-2 h1" /></a>
