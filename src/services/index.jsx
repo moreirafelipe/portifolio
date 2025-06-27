@@ -1,10 +1,13 @@
 import axios from 'axios';
 
-export async function fetchGitHubData(username, token) {
+export async function fetchGitHubData() {
+  const githubApiUserName = process.env.REACT_APP_GITHUB_API_USERNAME
+  const githubApiToken = process.env.REACT_APP_GITHUB_API_TOKEN
+
   try {
-    const reposUrl = `https://api.github.com/users/${username}/repos`;
+    const reposUrl = `https://api.github.com/users/${githubApiUserName}/repos`;
     const headers = {
-      Authorization: `token ${token}`,
+      Authorization: `token ${githubApiToken}`,
     };
 
     // Fetch all repositories

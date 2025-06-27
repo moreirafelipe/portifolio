@@ -4,6 +4,7 @@ import {
   CartesianGrid, Tooltip, Legend, Cell, PieChart, Pie
 } from 'recharts';
 import { fetchGitHubData } from '../../services';
+import Spinner from 'react-bootstrap/Spinner';
 import './styles.scss';
 
 export function GitHubSkillStats({ username, token }) {
@@ -128,14 +129,16 @@ export function GitHubSkillStats({ username, token }) {
               </PieChart>
             </ResponsiveContainer>
           ) : (
-            <p>Loading...</p>
+            <div id="spinner-container" className="d-flex justify-content-center align-items-center align-items-center h-100">
+              <Spinner animation="border" variant="success" />
+            </div>
           )}
         </div>
 
         {/* Bar chart: centered */}
         <div id="bar-chart" className="flex flex-row m-auto p-5 h-100 w-100">
           {skills.length > 0 ? (
-            <ResponsiveContainer className="m-auto" width="80%" height={500}>
+            <ResponsiveContainer className="m-auto" width="80%" height={400}>
               <BarChart
                 data={skills}
               >
@@ -156,7 +159,9 @@ export function GitHubSkillStats({ username, token }) {
               </BarChart>
             </ResponsiveContainer>
           ) : (
-            <p>Loading...</p>
+            <div id="spinner-container" className="d-flex justify-content-center align-items-center align-items-center h-100">
+              <Spinner animation="border" variant="success" />
+            </div>
           )}
         </div>
       </div>

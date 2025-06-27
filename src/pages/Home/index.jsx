@@ -87,7 +87,7 @@ const Home = () => {
       <Banner id="start" />
       <About id="about" />
       <GridCarousel id="projects" projects={arrayData} />
-      <GitHubSkillStats id="stats" username="moreirafelipe" token="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" />
+      <GitHubSkillStats />
       <Skills id="skills" />
     </>
   );
