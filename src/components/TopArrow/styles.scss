@@ -7,13 +7,13 @@
 
   .row-up-arrow {
     background-color: #000;
-    margin: 0 auto;
-    width: 30px;
-    height: 30px;
     position: fixed;
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
     bottom: 20px;
-    right: 7px;
-    margin: 0px 0 0 -30px;
+    right: 20px;
+    margin: 0 0 0 -30px;
     z-index: 100;
 
     .col-up-arrow {
@@ -107,14 +107,14 @@
 @media (min-width: 460px) {
   #back-buttom {
     .row-up-arrow {
-      width: 55px;
-      height: 55px;
-      right: 15px;
-      bottom: 30px;
+      width: 45px;
+      height: 45px;
+      bottom: 20px;
+      right: 20px;
 
       .col-up-arrow {
         .ca3-scroll-up-link {
-          bottom: 4px;
+          bottom: 0;
         }
       }
     }

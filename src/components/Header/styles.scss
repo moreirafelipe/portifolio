@@ -7,7 +7,6 @@
   position: fixed;
   padding-top: 10px;
   z-index: 100;
-  left: -25px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 
@@ -53,15 +52,14 @@
 
     @media (min-width: 992px) {
 
-        #responsive-navbar-nav {
-      z-index: 3;
+      #responsive-navbar-nav {
+        z-index: 3;
 
-        
-      .menu-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        .menu-list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
     }
 
     .menu-list {

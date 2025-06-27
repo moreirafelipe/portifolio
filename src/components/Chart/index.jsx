@@ -63,7 +63,7 @@ export function GitHubSkillStats({ username, token }) {
     <>
       {/* Pie chart: mobile only */}
       <div id="stats" className="mt-5 pt-5">
-        <h4 data-aos="fade-up" className="mt-5 pt-5" >Check out my stats!</h4>
+        <h4 data-aos="fade-up" className="mt-5 pt-5" >Programming skills stats!</h4>
         <div id="pie-chart" className="flex flex-col w-100 h-100">
           {skills.length > 0 ? (
             <ResponsiveContainer className="m-auto p-5" width="100%" height={500}>
