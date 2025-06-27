@@ -17,7 +17,8 @@
   position: relative;
 
   p,
-  h3 {
+  h3,
+  #contact > a {
     text-shadow: $textShadow;
     text-align: center;
   }

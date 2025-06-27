@@ -5,15 +5,16 @@
   width: 100vw;
   height: auto;
   position: fixed;
-  padding-top: 25px;
+  padding-top: 10px;
   z-index: 100;
+  left: -25px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 
   .navbar-brand {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    margin-left: 10px;
+    margin-left: 15px;
     font-weight: bolder;
     color: rgb(30, 255, 0);
   }
@@ -22,12 +23,18 @@
     color: rgb(81, 255, 0)
   }
 
-  #responsive-navbar-nav {
-    z-index: 3;
-  }
-
   @media (max-width: 991px) {
-
+    #responsive-navbar-nav {
+      z-index: 3;
+      
+      .menu-list {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: right;
+        align-items: flex-end;
+      }
+    }
+    
     #start-mobile {
       display: fixed;
       }
@@ -39,23 +46,39 @@
     .menu-list {
       display: flex;
       flex-flow: column wrap;
-      justify-content: center;
+      justify-content: right;
       align-items: flex-end;
     }
   }
 
-  @media (min-width: 992px) {
-      #start-mobile {
-        display: none;
-      }
+    @media (min-width: 992px) {
 
-      #start-desktop {
-        display: fixed;
-      }
+        #responsive-navbar-nav {
+      z-index: 3;
 
-      div {
-        margin: auto;
+        
+      .menu-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+    }
+
+    .menu-list {
+      align-items: center;
+    }
+
+    #start-mobile {
+      display: none;
+    }
+
+    #start-desktop {
+      display: fixed;
+    }
+
+    div {
+      margin: auto;
+    }
   }
 
   .menu-item {

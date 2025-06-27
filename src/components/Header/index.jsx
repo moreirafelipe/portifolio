@@ -35,15 +35,15 @@ export default function Header() {
   return (
     <Navbar id="navbar" className={colorChange ? 'navbar colorChange' : null} collapseOnSelect expand="lg" variant={colorChange ? 'dark' : 'light'} >
       <Container id="container">
-        <Navbar.Brand id="start-mobile" href="#start" className="bg-black px-2 py-0">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
+        <Navbar.Brand id="start-mobile" href="#start" className="bg-black px-2">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
         <Navbar.Toggle className="navbar-toggle p-1" aria-controls="responsive-navbar-nav" ><NavButton /></Navbar.Toggle >
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="menu-list mt-2 fw-bold fs-5">
-            <Nav.Link eventKey="4" as={Link} smooth to={"/#about"} className="bg-black text-light menu-item m-1 px-1" ><span>About me</span></Nav.Link>
+            <Nav.Link eventKey="1" as={Link} smooth to={"/#about"} className="bg-black text-light menu-item m-1 px-1" ><span>About me</span></Nav.Link>
             <Nav.Link eventKey="2" as={Link} smooth to={"/#projects"} className="bg-black text-light menu-item m-1 px-1" ><span>Projects</span></Nav.Link>
             <Navbar.Brand id="start-desktop" href="#start" className="bg-black px-2 py-0">F<span className="bg-black text-white">(m)</span></Navbar.Brand>
-            <Nav.Link eventKey="1" as={Link} smooth to={"/#stats"} className="bg-black text-light menu-item m-1 px-1" variant="black" ><span>Stats</span></Nav.Link>
-            <Nav.Link eventKey="3" as={Link} smooth to={"/#skills"} className="bg-black text-light menu-item m-1 px-1" ><span>Hard Skills</span></Nav.Link>
+            <Nav.Link eventKey="3" as={Link} smooth to={"/#stats"} className="bg-black text-light menu-item m-1 px-1" variant="black" ><span>Stats</span></Nav.Link>
+            <Nav.Link eventKey="4" as={Link} smooth to={"/#skills"} className="bg-black text-light menu-item m-1 px-1" ><span>Hard Skills</span></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

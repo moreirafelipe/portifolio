@@ -42,7 +42,7 @@ export function Banner() {
       </div>
 
       <Row className="d-flex justify-content-between align-items-center mt-5 pt-5 w-100 text-center content__title no-select">
-        <Col className='container-text text-center display-6 mt-5 pt-2' xs={12} md={12}>
+        <Col className='container-text text-center display-6 mt-2 pt-2' xs={12} md={12}>
 
           <span id="text-writing">
             <TypewriterComponent
@@ -60,11 +60,11 @@ export function Banner() {
                   .pauseFor(700)
                   .deleteChars(16)
 
-                  .typeString(`a Certified English speaker <img src=${languageSVG} alt="languages">`)
+                  .typeString(`a certified english speaker <img src=${languageSVG} alt="languages">`)
                   .pauseFor(700)
                   .deleteChars(28)
 
-                  .typeString(`a Data Architecture student <img className="" src=${cloudSVG} alt="engineer">`)
+                  .typeString(`a data architecture student <img className="" src=${cloudSVG} alt="engineer">`)
                   .pauseFor(700)
                   .deleteChars(28)
 
@@ -73,7 +73,8 @@ export function Banner() {
                   .typeString(`<img src=${languageSVG} alt="developer">`)
                   .typeString(`<img src=${cloudSVG} alt="developer">`)
 
-                  .typeString(`<br><br>Check out my projects <a href="#projects"><img src=${downArrowSVG}></a>`)
+                  .typeString(`<br>Check out my projects`)
+                  .typeString(`<br><a href="#projects"><img src=${downArrowSVG}></a>`)
                   .start();
               }}
             />
