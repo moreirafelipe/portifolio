@@ -51,8 +51,8 @@ export function GridCarousel(props) {
 
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
-    <div data-aos="fade-in" id="projects" className="d-flex flex-column flex-wrap mx-auto p-2">
-      <h3 data-aos="fade-up" className='mt-5 fs-3 mb-0'></h3>
+    <div id="projects" data-aos="fade-in" className="d-flex flex-column flex-wrap mx-auto mb-5 pb-5 p-2">
+      <h4 data-aos="fade-up" className='mt-5 fs-3 mb-0'></h4>
       <div data-aos="fade-up" className='d-none d-md-block py-3'>
         <Quote />
       </div>

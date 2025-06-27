@@ -61,101 +61,104 @@ export function GitHubSkillStats({ username, token }) {
   return (
     <>
       {/* Pie chart: mobile only */}
-      <div id="stats" className="flex flex-col w-100 h-100">
-        {skills.length > 0 ? (
-          <ResponsiveContainer id="pie-chart" className="m-auto" width="100%" height={500}>
-            <PieChart>
-              <Pie
-                data={skills}
-                cx="50%"
-                cy="50%"
-                labelLine={false}
-                label={({ percent }) =>
-                  (percent * 100).toFixed(0) > 0 ? `${(percent * 100).toFixed(0)}%` : null
-                }
-                outerRadius={100}
-                fill="#8884d8"
-                dataKey="value"
-              >
-                {skills.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={pie_chart_colors[index % pie_chart_colors.length]} />
-                ))}
-              </Pie>
-              <Tooltip formatter={(value) => `${value}%`} />
-              <Legend
-                verticalAlign="bottom"
-                horizontalAlign="center"
-                content={({ payload }) => (
-                  <div style={{ width: '50%', display: 'flex', justifyContent: 'center', margin: 'auto' }}>
-                    <ul style={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      justifyContent: 'center',
-                      padding: 0,
-                      listStyle: 'none',
-                      margin: 'auto',
-                    }}>
-                      {payload.map((entry, index) => (
-                        <li
-                          key={`item-${index}`}
-                          style={{
-                            margin: '0 10px',
-                            fontSize: '14px',
-                            color: '#000',
-                            display: 'flex',
-                            alignItems: 'center',
-                          }}
-                        >
-                          <span
+      <div id="stats" className="mt-5 pt-5">
+        <h3 data-aos="fade-up" className="mt-5 pt-5" >Check out my stats!</h3>
+        <div id="pie-chart" className="flex flex-col w-100 h-100">
+          {skills.length > 0 ? (
+            <ResponsiveContainer className="m-auto p-5" width="100%" height={500}>
+              <PieChart>
+                <Pie
+                  data={skills}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  label={({ percent }) =>
+                    (percent * 100).toFixed(0) > 0 ? `${(percent * 100).toFixed(0)}%` : null
+                  }
+                  outerRadius={100}
+                  fill="#8884d8"
+                  dataKey="value"
+                >
+                  {skills.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={pie_chart_colors[index % pie_chart_colors.length]} />
+                  ))}
+                </Pie>
+                <Tooltip formatter={(value) => `${value}%`} />
+                <Legend
+                  verticalAlign="bottom"
+                  horizontalAlign="center"
+                  content={({ payload }) => (
+                    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', margin: 'auto' }}>
+                      <ul style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'center',
+                        padding: 0,
+                        listStyle: 'none',
+                        margin: 'auto',
+                      }}>
+                        {payload.map((entry, index) => (
+                          <li
+                            key={`item-${index}`}
                             style={{
-                              display: 'inline-block',
-                              width: 10,
-                              height: 10,
-                              backgroundColor: entry.color,
-                              marginRight: 6,
-                              borderRadius: 2,
+                              margin: '0 10px',
+                              fontSize: '14px',
+                              color: '#000',
+                              display: 'flex',
+                              alignItems: 'center',
                             }}
-                          />
-                          {entry.value}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              />
-            </PieChart>
-          </ResponsiveContainer>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </div>
+                          >
+                            <span
+                              style={{
+                                display: 'inline-block',
+                                width: 10,
+                                height: 10,
+                                backgroundColor: entry.color,
+                                marginRight: 6,
+                                borderRadius: 2,
+                              }}
+                            />
+                            {entry.value}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
 
-      {/* Bar chart: centered */}
-      <div id="stats" className="flex flex-row justify-content-center m-auto h-100 w-100">
-        {skills.length > 0 ? (
-          <ResponsiveContainer id="bar-chart" className="m-auto" width="80%" height={450}>
-            <BarChart
-              data={skills}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis tickFormatter={(value) => `${value}%`} domain={[0, 100]} />
-              <Tooltip formatter={(value) => `${value}%`} />
-              <Legend verticalAlign="bottom" />
-              <Bar
-                dataKey="value"
-                name="Skill Usage (%)"
-                label={{ position: 'top', formatter: (v) => `${v}%` }}
+        {/* Bar chart: centered */}
+        <div id="bar-chart" className="flex flex-row m-auto p-5 h-100 w-100">
+          {skills.length > 0 ? (
+            <ResponsiveContainer className="m-auto" width="80%" height={500}>
+              <BarChart
+                data={skills}
               >
-                {skills.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={bar_chart_colors[index % bar_chart_colors.length]} />
-                ))}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
-        ) : (
-          <p>Loading...</p>
-        )}
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis tickFormatter={(value) => `${value}%`} domain={[0, 100]} />
+                <Tooltip formatter={(value) => `${value}%`} />
+                <Legend verticalAlign="bottom" />
+                <Bar
+                  dataKey="value"
+                  name="Skill Usage (%)"
+                  label={{ position: 'top', formatter: (v) => `${v}%` }}
+                >
+                  {skills.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={bar_chart_colors[index % bar_chart_colors.length]} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
       </div>
     </>
   );

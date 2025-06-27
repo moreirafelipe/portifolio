@@ -2,6 +2,7 @@
   color: "#000";
   width: 100%;
   height: 100vh;
+  text-align: center;
 }
 
 #legend {
@@ -23,8 +24,6 @@ h4 {
 @media (max-width: 576px) {
   #pie-chart {
     display: fixed;
-    width: 100%;
-    height: 100vh;
   }
 
   #bar-chart {
@@ -37,8 +36,6 @@ h4 {
 @media (min-width: 577px) {
   #pie-chart {
     display: none;
-    width: 100%;
-    height: 100vh;
   }
 
   #bar-chart {
