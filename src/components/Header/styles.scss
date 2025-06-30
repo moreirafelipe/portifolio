@@ -6,6 +6,7 @@
   height: auto;
   position: fixed;
   padding-top: 25px;
+  margin-left: -20px;
   z-index: 100;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -23,6 +24,10 @@
   }
 
   @media (max-width: 991px) {
+    #navbar{
+      margin-left: 0;
+    }
+
     #responsive-navbar-nav {
       z-index: 3;
       
