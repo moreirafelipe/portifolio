@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: 468px) {
+@media (min-width: 576px) {
   #about {
     .row {
       h3 {
@@ -51,9 +51,29 @@
       }
 
       p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin: 1% 0;
         width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #about {
+    .row {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #about {
+    .row {
+      p {
+        font-size: 1.3rem;
       }
     }
   }

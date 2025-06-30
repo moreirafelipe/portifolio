@@ -22,14 +22,14 @@ export function About() {
   //Iterando array de dados e retornando componentes que contém os cards como props children
   return (
     <div id="about" className="d-flex w-100 mt-5 pt-5 justify-content-around align-items-start text-light">
-      <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-4 pt-4">
+      <div className="row d-flex flex-row flex-wrap justify-content-around align-items-start mt-4 pt-5">
         <h3 data-aos="fade-up" className="text-center">Nice to meet you!</h3>
         <div data-aos="fade-up" className="col-12 d-flex mt-1 flex-row flex-wrap justify-content-around align-items-start fs-6">
           <p data-aos="fade-up" className="col-12 col-md-9 ">
-            I'm a Data Engineer over 3 years of experience, capable of developing and maintaining multi-platform data applications, approaching many aspects of its applicability based on the desired context.
+            I'm a Data Engineer over 3 years of experience, capable of developing and maintaining multi-platform data applications.
           </p>
           <p data-aos="fade-up">
-            With demonstrated story in the education, real-state and financial business segments, I'm capable to understand and translate knowledge throughout business needs for stakeholders and development teams.
+            With demonstrated story in the education, real-state and financial business segments, I'm capable to understand and translate knowledge throughout business needs to stakeholders and development teams.
           </p>
           <p data-aos="fade-up">
             I have been working as Data Engineer since January 2022 and specializing my studies through the Data Architecture post graduation degree, at PUC Minas university, since 2024.
