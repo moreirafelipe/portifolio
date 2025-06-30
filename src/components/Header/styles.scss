@@ -5,7 +5,7 @@
   width: 100vw;
   height: auto;
   position: fixed;
-  padding-top: 10px;
+  padding-top: 25px;
   z-index: 100;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -47,6 +47,7 @@
       flex-flow: column wrap;
       justify-content: right;
       align-items: flex-end;
+      margin-right: 7px;
     }
   }
 

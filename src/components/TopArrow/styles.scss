@@ -104,6 +104,23 @@
   }
 }
 
+@media (max-width: 459px) {
+  #back-buttom {
+    .row-up-arrow {
+      width: 45px;
+      height: 45px;
+      bottom: 15px;
+      right: 23px;
+
+      .col-up-arrow {
+        .ca3-scroll-up-link {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 460px) {
   #back-buttom {
     .row-up-arrow {
