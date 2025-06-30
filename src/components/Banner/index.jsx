@@ -42,7 +42,7 @@ export function Banner() {
       </div>
 
       <Row className="d-flex justify-content-between align-items-center mt-5 pt-5 w-100 text-center content__title no-select">
-        <Col className='container-text text-center display-6 mt-2 pt-2' xs={12} md={12}>
+        <Col className='container-text text-center display-6 mt-5 pt-5' xs={12} md={12}>
 
           <span id="text-writing">
             <TypewriterComponent
