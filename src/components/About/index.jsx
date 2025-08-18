@@ -41,7 +41,7 @@ export function About() {
             <a href="https://docs.google.com/document/d/1XXEA1HKDEHNQEYDNUNEOcsXkBMLtUErD70mV55vaz7Q/edit?usp=sharing" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faFile} className="mx-2 h1" /></a>
             <a href="https://www.linkedin.com/in/felipemoreiran24/" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} className="mx-2 h1" /></a>
             <a href="https://github.com/moreirafelipe" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faGithub} className="mx-2 h1" /></a>
-            <a href="mailto:felipe.saint@gmail.com" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faEnvelope} className="mx-2 h1" /></a>
+            <a href="mailto:felipe.platformeng@gmail.com" target={"_blank"} rel='noreferrer'><FontAwesomeIcon icon={faEnvelope} className="mx-2 h1" /></a>
           </div>
         </div>
       </div>
