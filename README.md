@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Portifolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio React app.
 
-## Available Scripts
+## Summary
+This repository contains a Create React App based portfolio site with several components and a small data visualization (GitHub skill stats).
 
-In the project directory, you can run:
+## What I changed recently
+- Added barrel exports for `src/components`, `src/pages`, `src/services`, `src/hooks`, and `src/utils` to simplify imports.
+- Wrapped page sections in `.section-100vh` and added responsive/landscape Sass rules in `src/styles/index.scss` so each main section fills the viewport and has consistent margins.
+- Added a short refactor plan in `REFACTORING.md`.
 
-### `npm start`
+## Prerequisites
+- Node.js: recommended v16.x (LTS) for compatibility with `react-scripts@5`. If you prefer to use Node 18/20/22, see Troubleshooting below for required fixes.
+- npm (bundled with Node)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Install & run
+In project root:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+npm start
+```
 
-### `npm test`
+## Common issues & fixes
+- Error: "error:0308010C:digital envelope routines::unsupported" on Node 17+ (OpenSSL) — temporary fix:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# PowerShell
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+npm start
 
-### `npm run build`
+# Windows CMD
+set NODE_OPTIONS=--openssl-legacy-provider && npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Error: "react_dom.render is not a function" — you're using React 18/19; update `src/index.jsx` to use the `createRoot` API from `react-dom/client`:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+```
 
-### `npm run eject`
+- Loader/Babel/Webpack conflicts: Do NOT keep custom `webpack`/`babel-loader`/`@babel/*` entries in `devDependencies` while using `react-scripts`. Remove them from `package.json`, then reinstall:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# remove node_modules and lockfile
+npm rm -rf node_modules package-lock.json
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `ajv` / `ajv-keywords` module errors: ensure compatible versions are installed. Example:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install ajv@^6.12.6 ajv-keywords@^3.5.2 --save-dev
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `recharts` / `react-redux` errors for `useSyncExternalStore` — either upgrade React to v18+ or pin `recharts` to a version compatible with React 17 (e.g. `recharts@2.1.16`).
 
-## Learn More
+## Conventions
+- Components: `src/components/ComponentName/index.jsx` default export
+- Pages: `src/pages/` with a default export per page
+- Barrels: use `src/components/index.js` and `src/pages/index.js` for simpler imports
+- Layout: use the `.section-100vh` wrapper (in `src/styles/index.scss`) to make each page section fill the viewport
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Next steps (recommended)
+- Replace import paths across the codebase to use barrel files.
+- Remove conflicting devDependencies from `package.json` (webpack, babel-loader, @babel/*) when using `react-scripts`.
+- Add ESLint + Prettier configuration and run autoformat.
+- Add small unit tests for critical components.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you'd like, I can make the import migration and add linting in a follow-up.
